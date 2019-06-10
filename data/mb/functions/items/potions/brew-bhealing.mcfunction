@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,distance=..1,nbt={Item:{tag:{bppotion:1b}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:potion",Count:1b,tag:{Potion:"minecraft:healing"}}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] if block ~ ~-1 ~ fire run tag @s add rbobhealing
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rbobhealing] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=rbobhealing] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] add rpo
+execute as @e[type=armor_stand,tag=cauldron,tag=rbobhealing] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbobhealing] at @s run summon item ~ ~0.5 ~ {NoGravity:1b,Item:{id:"minecraft:splash_potion",Count:3b,tag:{display:{Name:"{\"text\":\"Brew of Broken Healing\",\"color\":\"dark_green\"}"},HideFlags:63,CustomPotionEffects:[{Id:6b,Amplifier:2b,Duration:20,ShowParticles:0b},{Id:19b,Amplifier:1b,Duration:400,ShowParticles:0b}],CustomPotionColor:16751096}}}
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbobhealing] at @s run tag @s remove rbobhealing

@@ -1,0 +1,20 @@
+function mb:misc
+function mb:ee
+function mb:treant
+function mb:impvmobs
+function mb:altar
+function mb:main/cauldron
+function mb:potions
+function mb:normalrituals
+function mb:main/chalkritualc
+function mb:demon
+function mb:crystallball
+function mb:brazier
+function mb:infusions
+function mb:necrod
+function mb:mirror
+function mb:coinf
+function mb:mosscrown
+function mb:thebook
+
+function mb:end

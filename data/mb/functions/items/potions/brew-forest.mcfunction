@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,distance=..1,nbt={Item:{tag:{mgpotion:1b}}}] if entity @e[type=item,distance=..1,nbt={Item:{tag:{tod:1b}}}] if entity @e[type=item,distance=..1,nbt={Item:{tag:{stpotion:1b}}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] if block ~ ~-1 ~ fire run tag @s add rboforest
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rboforest] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=rboforest] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] add rpo
+execute as @e[type=armor_stand,tag=cauldron,tag=rboforest] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboforest] at @s run summon item ~ ~0.5 ~ {NoGravity:1b,Item:{id:"minecraft:splash_potion",Count:3b,tag:{CustomModelData:13,brewofforest:1b,display:{Name:"{\"text\":\"Brew of the Forest\",\"color\":\"dark_green\"}"},HideFlags:63,ShowParticles:0b,CustomPotionColor:720658}}}
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboforest] at @s run tag @s remove rboforest
