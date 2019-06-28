@@ -32,6 +32,14 @@
                                 {
                                     "text":" "
                                 },
+								{
+                                    "text":"So many worlds to conquer!",
+                                    "color":"dark_gray",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
                                 {
                                     "text":"  ☽ Witching Hour ☽  ",
                                     "color":"dark_green",

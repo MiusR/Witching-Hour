@@ -32,6 +32,14 @@
                                 {
                                     "text":" "
                                 },
+								{
+                                    "text":"Isn't it beautiful!",
+                                    "color":"dark_gray",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
                                 {
                                     "text":"  ☽ Witching Hour ☽  ",
                                     "color":"dark_green",

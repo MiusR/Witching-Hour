@@ -1,4 +1,4 @@
-execute as @e[type=minecraft:potion,nbt={Potion:{tag:{brewoftangledwebs:1b}}},tag=!done] at @s run tag @s add botw
+execute as @e[type=minecraft:potion,nbt={Potion:{tag:{id:"brew_of_tangeled_webs"}}},tag=!done] at @s run tag @s add botw
 execute as @e[tag=botw,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["botwf"],DisabledSlots:4144959}
 execute as @e[tag=botw,tag=!done] at @s run tag @s add done
 execute as @e[tag=botwf] at @s run tp @s @e[tag=botw,limit=1,sort=nearest,distance=..1]

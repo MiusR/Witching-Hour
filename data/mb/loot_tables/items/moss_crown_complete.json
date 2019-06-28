@@ -29,6 +29,19 @@
                                     "color":"gold",
                                     "italic":false
                                 },
+								{
+                                    "text":"[Complete]",
+                                    "color":"purple",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"Perfect, now all kneel before the king!",
+                                    "color":"dark_gray",
+                                    "italic":false
+                                },
                                 {
                                     "text":" "
                                 },

@@ -30,8 +30,16 @@
                                     "italic":false
                                 },
                                 {
-                                    "text":"Incomplete",
+                                    "text":"[Incomplete]",
                                     "color":"purple",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"It still misses something.",
+                                    "color":"dark_gray",
                                     "italic":false
                                 },
                                 {

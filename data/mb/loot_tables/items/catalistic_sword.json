@@ -1,0 +1,75 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:diamond_sword",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:2,id:\"catalistic_sword\",Enchantments:[{lvl:4,id:\"minecraft:sharpness\"},{lvl:4,id:\"minecraft:looting\"},{lvl:2,id:\"minecraft:sweeping\"},{lvl:1,id:\"minecraft:mending\"}],Damage:0,HideFlags:63}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Catalistc Sword",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Artifact]",
+                                    "color":"gold",
+                                    "italic":false
+                                },
+								{
+                                    "text":"Sharpness IV",
+                                    "color":"gray",
+                                    "italic":false
+                                },
+								{
+                                    "text":"Looting IV",
+                                    "color":"gray",
+                                    "italic":false
+                                },
+								{
+                                    "text":"Sweeping Edge II",
+                                    "color":"gray",
+                                    "italic":false
+                                },
+								{
+                                    "text":"Mending",
+                                    "color":"gray",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"Very durable, great for chopping.",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":" "
+                                },
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

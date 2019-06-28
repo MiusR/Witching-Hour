@@ -1,4 +1,4 @@
-execute as @e[type=minecraft:potion,nbt={Potion:{tag:{brewofcombustion:1b}}}] at @s run tag @s add bocomb
+execute as @e[type=minecraft:potion,nbt={Potion:{tag:{id:"brew_of_combustion"}}}] at @s run tag @s add bocomb
 execute as @e[tag=bocomb,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["bocombf"],DisabledSlots:4144959}
 execute as @e[tag=bocomb,tag=!done] at @s run tag @s add done
 execute as @e[tag=bocombf] at @s run tp @s @e[tag=bocomb,limit=1,sort=nearest,distance=..1]

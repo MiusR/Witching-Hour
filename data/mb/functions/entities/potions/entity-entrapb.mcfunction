@@ -1,4 +1,4 @@
-execute as @e[type=minecraft:potion,nbt={Potion:{tag:{brewofentrapment:1b}}}] at @s run tag @s add boe
+execute as @e[type=minecraft:potion,nbt={Potion:{tag:{id:"brew_of_entrapment"}}}] at @s run tag @s add boe
 execute as @e[tag=boe,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,PersistenceRequired:1b,Tags:["boef"],DisabledSlots:4144959}
 execute as @e[tag=boe,tag=!done] at @s run tag @s add done
 execute as @e[tag=boef] at @s run tp @s @e[tag=boe,limit=1,sort=nearest,distance=..1]

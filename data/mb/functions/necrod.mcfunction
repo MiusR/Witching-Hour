@@ -1,8 +1,8 @@
 execute as @a[tag=blindeinf,tag=!soullinkp] if score @s Taglock = @e[limit=1,tag=soullinked] Taglocktemp run tag @s add soullinkp
-execute as @a[tag=blindeinf,nbt={SelectedItem:{tag:{nediam:1b}}},scores={Rclick=1..,PlayerInfP=1000..},tag=!soullinkp] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["raycast","soullink"],DisabledSlots:4144959}
-execute as @a[nbt={SelectedItem:{tag:{nediam:1b}}},scores={Rclick=1..,PlayerInfP=1000..},tag=soullinkp,tag=blindeinf] at @s run tellraw @s {"text":"You can only have one link at a time!","color":"red"}
-execute as @a[nbt={SelectedItem:{tag:{nediam:1b}}},scores={Rclick=1..,PlayerInfP=1000..},tag=!soullinkp,tag=blindeinf] at @s run scoreboard players remove @s PlayerInfP 1000
-execute as @a[nbt={SelectedItem:{tag:{nediam:1b}}},scores={Rclick=1..}] at @s run scoreboard players set @s Rclick 0
+execute as @a[tag=blindeinf,nbt={SelectedItem:{tag:{id:"soul_gem"}}},scores={Rclick=1..,PlayerInfP=1000..},tag=!soullinkp] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["raycast","soullink"],DisabledSlots:4144959}
+execute as @a[nbt={SelectedItem:{tag:{id:"soul_gem"}}},scores={Rclick=1..,PlayerInfP=1000..},tag=soullinkp,tag=blindeinf] at @s run tellraw @s {"text":"You can only have one link at a time!","color":"red"}
+execute as @a[nbt={SelectedItem:{tag:{id:"soul_gem"}}},scores={Rclick=1..,PlayerInfP=1000..},tag=!soullinkp,tag=blindeinf] at @s run scoreboard players remove @s PlayerInfP 1000
+execute as @a[nbt={SelectedItem:{tag:{id:"soul_gem"}}},scores={Rclick=1..}] at @s run scoreboard players set @s Rclick 0
 execute as @e[type=armor_stand,tag=soullink,tag=!init] at @s run tp @s @p[distance=..1]
 execute as @e[type=armor_stand,tag=soullink,tag=!init] at @s run tp @s ~ ~1.7 ~
 execute as @e[type=armor_stand,tag=soullink,tag=!init] at @s positioned ~ ~ ~ store result score @s Taglocktemp run scoreboard players get @p[dy=3.5,dx=0.3,dz=0.3] Taglock

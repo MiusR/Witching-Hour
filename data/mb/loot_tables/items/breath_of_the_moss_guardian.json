@@ -1,0 +1,60 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:glass_bottle",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:2,id:\"breath_of_the_moss_guardian\"}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Breath of the Moss Guardian",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Ingredient]",
+                                    "color":"green",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+									"text":"Essence if life in a bottle.",
+									"color":"dark_gray",
+									"italic":false
+								},
+								{
+									"text":"He needs a mint!",
+									"color":"dark_gray",
+									"italic":false
+								},
+								{
+									"text":""
+								},
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

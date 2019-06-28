@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:glowstone_dust",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:123,id:\"magic_ball\"}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Magic Ball",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Artifact]",
+                                    "color":"gold",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"I see gold in your future!",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":" "
+                                },
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

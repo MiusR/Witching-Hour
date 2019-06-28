@@ -2,6 +2,6 @@ execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=
 execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rdblood] at @s run tag @s add timer
 execute as @e[type=armor_stand,tag=cauldron,tag=rdblood] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] add rea
 execute as @e[type=armor_stand,tag=cauldron,tag=rdblood] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rdblood] at @s run summon item ~ ~0.5 ~ {NoGravity:1b,Item:{id:"minecraft:glass_bottle",Count:2b,tag:{CustomModelData:14,dbpotion:1b,display:{Name:"{\"text\":\"Evil Blood\",\"color\":\"dark_red\"}"}}}}
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rdblood] at @s run summon item ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:102,horrord:1b,display:{Name:"{\"text\":\"Horror Dust\",\"color\":\"green\"}"}}}}
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rdblood] at @s run summon item ~ ~0.5 ~ {NoGravity:1b,Item:{id:"minecraft:glass_bottle",Count:2b,tag:{CustomModelData:14,id:"evil_blood",display:{Name:"{\"text\":\"Evil Blood\",\"color\":\"dark_red\"}"}}}}
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rdblood] at @s run summon item ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:102,id:"horror_dust",display:{Name:"{\"text\":\"Horror Dust\",\"color\":\"green\"}"}}}}
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rdblood] at @s run tag @s remove rdblood

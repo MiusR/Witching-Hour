@@ -3,5 +3,5 @@ execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=
 execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rmgb] at @s run tag @s add timer
 execute as @e[type=armor_stand,tag=cauldron,tag=rmgb] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] add rea
 execute as @e[type=armor_stand,tag=cauldron,tag=rmgb] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rmgb] at @s run summon item ~ ~0.5 ~ {NoGravity:1b,Item:{id:"minecraft:glass_bottle",Count:1b,tag:{CustomModelData:2,mgpotion:1b,display:{Name:"{\"text\":\"Breath of the Moss Guardian\",\"color\":\"green\"}"}}}}
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rmgb] at @s run summon item ~ ~0.5 ~ {NoGravity:1b,Item:{id:"minecraft:glass_bottle",Count:1b,tag:{CustomModelData:2,id:"breath_of_the_moss_guardian",display:{Name:"{\"text\":\"Breath of the Moss Guardian\",\"color\":\"green\"}"}}}}
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rmgb] at @s run tag @s remove rmgb

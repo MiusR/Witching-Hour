@@ -32,6 +32,14 @@
                                 {
                                     "text":" "
                                 },
+								{
+                                    "text":"I can not see what is not seen.",
+                                    "color":"dark_gray",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
                                 {
                                     "text":"  ☽ Witching Hour ☽  ",
                                     "color":"dark_green",
