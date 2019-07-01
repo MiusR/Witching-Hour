@@ -1,9 +1,9 @@
 scoreboard players set counter count 0
 scoreboard players set scounter count 0
-execute as @e[type=bat,tag=!changed] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:string",Count:1b,tag:{display:{Name:"{\"text\":\"Wool of Bat\",\"color\":\"green\"}"},CustomModelData:1,id:"wool_of_bat"}}],ArmorDropChances:[0.85F,0.85F,0.85F,0.4F]}
-execute as @e[type=bat,tag=!changed] run tag @s add changed
-execute as @e[type=wolf,tag=!changed] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{display:{Name:"{\"text\":\"Tongue of Dog\",\"color\":\"green\"}"},CustomModelData:124,id:"tounge_of_dog"}}],ArmorDropChances:[0.85F,0.85F,0.85F,0.4F]}
-execute as @e[type=wolf,tag=!changed] run tag @s add changed
+#execute as @e[type=bat,tag=!changed] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:string",Count:1b,tag:{display:{Name:"{\"text\":\"Wool of Bat\",\"color\":\"green\"}"},CustomModelData:1,id:"wool_of_bat"}}],ArmorDropChances:[0.85F,0.85F,0.85F,0.4F]}
+#execute as @e[type=bat,tag=!changed] run tag @s add changed
+#execute as @e[type=wolf,tag=!changed] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{display:{Name:"{\"text\":\"Tongue of Dog\",\"color\":\"green\"}"},CustomModelData:124,id:"tounge_of_dog"}}],ArmorDropChances:[0.85F,0.85F,0.85F,0.4F]}
+#execute as @e[type=wolf,tag=!changed] run tag @s add changed
 execute as @e[type=zombie,tag=!found] run scoreboard players add counter count 1
 execute as @e[type=enderman,tag=!found] in minecraft:overworld run scoreboard players add scounter count 1
 execute as @a[] at @s run tag @e[type=zombie,distance=..16] add found
@@ -17,7 +17,7 @@ execute as @e[tag=c_carvedstone] at @s run setblock ~ ~ ~ minecraft:structure_bl
 execute as @e[tag=c_carvedstone] at @s run setblock ~ ~1 ~ redstone_block
 execute as @e[tag=c_carvedstone] at @s run tp @s ~ ~-250 ~
 execute as @e[tag=c_carvedstone] at @s run kill @s
-execute as @e[tag=s_evilp] at @s run summon slime ~ ~ ~ {DeathLootTable:"56789",AbsorptionAmount:14f,Size:1,Tags:["inv","evilpumpkin"],Attributes:[{Name:generic.attackDamage,Base:5}]}
+execute as @e[tag=s_evilp] at @s run summon slime ~ ~ ~ {DeathLootTable:"56789",AbsorptionAmount:14f,Size:1,Tags:["inv","evilpumpkin"],Attributes:[{Name:generic.attackDamage,Base:5}],CustomName:"\"Evil Pumpkin\""}
 execute as @e[tag=s_evilp] at @s run tp @s ~ -250 ~
 execute as @e[tag=s_evilp] at @s run kill @s
 execute as @e[type=minecraft:villager,nbt={VillagerData:{profession: "minecraft:cleric",level: 1}},tag=!cleric] at @s run tag @s add cleric
@@ -28,7 +28,7 @@ execute as @e[type=minecraft:villager,tag=cleric,scores={ADT=4000}] at @s run pl
 execute as @e[type=minecraft:villager,tag=cleric,scores={ADT=8000..}] at @s run summon area_effect_cloud ~ ~ ~ {Particle:"hearth",ReapplicationDelay:80,Radius:1f,RadiusPerTick:0.1f,Duration:100,Color:16772608,Potion:"minecraft:regeneration"}
 execute as @e[type=minecraft:villager,tag=cleric,scores={ADT=8000..}] at @s run playsound minecraft:entity.villager.yes master @a[distance=..20] ~ ~ ~ 100 1
 scoreboard players reset @e[type=minecraft:villager,tag=cleric,scores={ADT=8000..}] ADT
-execute as @e[type=slime,tag=evilpumpkin,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["ephead"],DisabledSlots:4144959,ArmorItems:[{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{display:{Name:"{\"text\":\"Horror Dust\",\"color\":\"green\"}"},CustomModelData:102,id:"horror_dust"}},{id:"minecraft:carved_pumpkin",Count:1b}],ArmorDropChances:[0.85F,0.85F,0.7F,-327.67F]}
+execute as @e[type=slime,tag=evilpumpkin,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Invisible:1b,Tags:["ephead"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:carved_pumpkin",Count:1b}],ArmorDropChances:[0.85F,0.85F,0.7F,-327.67F]}
 execute as @e[type=slime,tag=evilpumpkin,tag=!done] at @s run tag @s add done
 execute as @e[tag=ephead] at @s run tp @s @e[limit=1,sort=nearest,tag=evilpumpkin,distance=..2]
 execute as @e[tag=ephead] at @s run tp @s ~ ~-1.3 ~
@@ -39,18 +39,18 @@ execute as @e[type=slime,tag=evilpumpkin] at @s unless block ~ ~-0.2 ~ air if en
 execute as @e[type=slime,tag=evilpumpkin] at @s unless block ~ ~-0.2 ~ air unless entity @p[distance=..10] run setblock ~ ~ ~ minecraft:carved_pumpkin
 execute as @e[type=slime,tag=evilpumpkin] at @s unless block ~ ~-0.2 ~ air if entity @p[distance=..10] run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:carved_pumpkin
 execute as @e[tag=ephead] at @s unless entity @e[tag=evilpumpkin,distance=..2] run kill @s
-execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:102,id:"horror_dust",display:{Name:"{\"text\":\"Horror Dust\",\"color\":\"green\"}"}}}}
+execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run loot spawn ~ ~ ~ loot mb:entities/evil_pumpkin
 execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run tp @s ~ -150 ~
 execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run scoreboard players reset @s Life
 execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run kill @s
-execute as @e[tag=s_frog] at @s run summon slime ~ ~ ~ {DeathLootTable:"56789",AbsorptionAmount:14f,Size:1,Tags:["inv","frog"],Attributes:[{Name:generic.attackDamage,Base:0}]}
+execute as @e[tag=s_frog] at @s run summon slime ~ ~ ~ {DeathLootTable:"56789",AbsorptionAmount:14f,Size:1,Tags:["inv","frog"],Attributes:[{Name:generic.attackDamage,Base:0}],CustomName:"\"Frog\""}
 execute as @e[tag=frog,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["frog_gfx"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:12}}]}
 execute as @e[tag=frog,tag=!done] at @s run tag @s add done
 execute as @e[tag=frog_gfx] at @s run tp @s @e[tag=frog,tag=done,limit=1,distance=..2,sort=nearest]
 execute as @e[tag=frog,scores={Life=0}] at @s run kill @e[distance=..1,sort=nearest,tag=frog_gfx,limit=1]
 execute as @e[tag=s_frog] at @s run tp @s ~ -250 ~
 execute as @e[tag=s_frog] at @s run kill @s
-execute as @e[tag=frog,scores={Life=0}] at @s run summon item ~ ~ ~ {Motion:[0.0,0.3,0.0],Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{toeoffrog:1b,CustomModelData:105,display:{Name:"{\"text\":\"Toe of Frog\",\"color\":\"green\"}"}}}}
+execute as @e[tag=frog,scores={Life=0}] at @s run loot spawn ~ ~ ~ loot mb:entities/frog
 execute as @e[tag=frog,scores={Life=0}] at @s run tp @s ~ -150 ~
 execute as @e[tag=frog,scores={Life=0}] at @s run scoreboard players reset @s Life
 execute as @e[tag=frog,scores={Life=0}] at @s run kill @s
