@@ -2,5 +2,5 @@ execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=
 execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rboenderchaos] at @s run tag @s add timer
 execute as @e[type=armor_stand,tag=cauldron,tag=rboenderchaos] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] add rpo
 execute as @e[type=armor_stand,tag=cauldron,tag=rboenderchaos] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboenderchaos] at @s run summon item ~ ~0.5 ~ {NoGravity:1b,Item:{id:"minecraft:splash_potion",Count:3b,tag:{CustomModelData:11,id:"brew_of_ender_chaos",display:{Name:"{\"text\":\"Brew of Ender Chaos\",\"color\":\"dark_green\"}"},HideFlags:63,ShowParticles:0b,CustomPotionColor:10159615}}}
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboenderchaos] at @s run loot spawn ~ ~ ~ loot mb:items/cauldron/brew_of_ender_chaos
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboenderchaos] at @s run tag @s remove rboenderchaos
