@@ -87,7 +87,7 @@ tag @a[tag=foundtaglock1] remove foundtaglock1
 execute as @a[nbt={SelectedItem:{tag:{id:"blood_pact"}}},scores={Sneak=1}] run tag @s add told1
 execute as @a[nbt=!{SelectedItem:{tag:{id:"blood_pact"}}}] run tag @s remove told1
 
-execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true] run summon item ~ ~ ~ {Item:{id:"minecraft:paper",Count:1b,tag:{display:{Name:"{\"text\":\"Blood Pact\",\"color\":\"green\"}"},CustomModelData:1,id:"blood_pact",taglockdata:0}}}
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true] run loot spawn ~ ~1 ~ loot mb:items/blood_pact
 execute as @e[type=item,tag=!init,nbt={Item:{tag:{id:"blood_pact",taglockdata:0}}}] at @s store result entity @s Item.tag.taglockdata int 1 run data get entity @e[limit=1,type=item,nbt={Item:{tag:{id:"taglock_kit"}}},distance=..1] Item.tag.taglockdata 1
 execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=east] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=east]
 execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=west] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=west]

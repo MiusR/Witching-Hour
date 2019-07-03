@@ -1,21 +1,21 @@
 {
     "pools": [
         {
-            "rolls": 1,
+            "rolls": 3,
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:diamond_sword",
+                    "name": "minecraft:splash_potion",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:2,id:\"catalistic_sword\",Enchantments:[{lvl:4,id:\"minecraft:sharpness\"},{lvl:2,id:\"minecraft:sweeping\"},{lvl:1,id:\"minecraft:mending\"}],Damage:0,HideFlags:63}"
+                            "tag": "{CustomModelData:13,id:\"brew_of_the_forest\",CustomPotionColor:720658,ShowParticles:0b,HideFlags:63,Enchantments:[{lvl:1,id:\"minecraft:power\"}]}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "Catalistc Sword",
+                                "text": "Brew of the Forest",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -25,35 +25,15 @@
                             "lore" : 
                             [
                                 {
-                                    "text":"[Artifact]",
-                                    "color":"gold",
-                                    "italic":false
-                                },
-								{
-                                    "text":"Sharpness IV",
-                                    "color":"gray",
-                                    "italic":false
-                                },
-								{
-                                    "text":"Looting IV",
-                                    "color":"gray",
-                                    "italic":false
-                                },
-								{
-                                    "text":"Sweeping Edge II",
-                                    "color":"gray",
-                                    "italic":false
-                                },
-								{
-                                    "text":"Mending",
-                                    "color":"gray",
+                                    "text":"[Brew]",
+                                    "color":"dark_green",
                                     "italic":false
                                 },
                                 {
                                     "text":" "
                                 },
 								{
-                                    "text":"Very durable, great for chopping.",
+                                    "text":"Insta bush only 99.99$",
 									"color":"dark_gray",
 									"italic":false
                                 },
