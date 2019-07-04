@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/redstonesoup",
+        "layer1": "item/redstonesoup"
+    }
+}

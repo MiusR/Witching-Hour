@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/borntrapment",
+        "layer1": "item/borntrapment"
+    }
+}

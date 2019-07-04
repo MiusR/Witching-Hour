@@ -1,0 +1,18 @@
+{
+    "parent": "item/handheld_rod",
+    "textures": {
+        "layer0": "item/carrot_on_a_stick"
+    },
+
+		"overrides": [
+			{"predicate": {"custom_model_data":1}, "model": "item/ci/wchalk"},
+			{"predicate": {"custom_model_data":2}, "model": "item/ci/gchalk"},
+			{"predicate": {"custom_model_data":3}, "model": "item/ci/ichalk"},
+			{"predicate": {"custom_model_data":4}, "model": "item/ci/necrodiamond"},
+			{"predicate": {"custom_model_data":5}, "model": "item/ci/chains"},
+			{"predicate": {"custom_model_data":6}, "model": "item/ci/fateii"},
+			{"predicate": {"custom_model_data":7}, "model": "item/ci/moss_crown"},
+			{"predicate": {"custom_model_data":8}, "model": "item/ci/moss_crown_full"}
+
+		]
+}

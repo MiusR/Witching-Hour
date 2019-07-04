@@ -1,0 +1,16 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/potion_overlay",
+        "layer1": "item/potion"
+    },
+
+		"overrides": [
+			{"predicate": {"custom_model_data":1}, "model": "item/ci/redstonesoup"},
+			{"predicate": {"custom_model_data":2}, "model": "item/ci/mysticointment"},
+			{"predicate": {"custom_model_data":3}, "model": "item/ci/blindeyei"},
+			{"predicate": {"custom_model_data":4}, "model": "item/ci/sotpi"},
+			{"predicate": {"custom_model_data":5}, "model": "item/ci/fatei"},
+			{"predicate": {"custom_model_data":6}, "model": "item/ci/softw"}
+		]
+}

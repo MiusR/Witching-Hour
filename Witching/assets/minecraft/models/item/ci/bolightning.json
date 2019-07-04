@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/bolightning",
+        "layer1": "item/bolightning"
+    }
+}

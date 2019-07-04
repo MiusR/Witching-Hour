@@ -1,0 +1,27 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/glass_bottle"
+    },
+
+		"overrides": [
+			{"predicate": {"custom_model_data":1}, "model": "item/ci/mpotionb"},
+			{"predicate": {"custom_model_data":2}, "model": "item/ci/mgpotion"},
+			{"predicate": {"custom_model_data":3}, "model": "item/ci/hoapotion"},
+			{"predicate": {"custom_model_data":4}, "model": "item/ci/loppotion"},
+			{"predicate": {"custom_model_data":5}, "model": "item/ci/ooppotion"},
+			{"predicate": {"custom_model_data":6}, "model": "item/ci/lppotion"},
+			{"predicate": {"custom_model_data":7}, "model": "item/ci/fupotion"},
+			{"predicate": {"custom_model_data":8}, "model": "item/ci/lfpotion"},
+			{"predicate": {"custom_model_data":9}, "model": "item/ci/stpotion"},
+			{"predicate": {"custom_model_data":10}, "model": "item/ci/bppotion"},
+			{"predicate": {"custom_model_data":11}, "model": "item/ci/glpotion"},
+			{"predicate": {"custom_model_data":12}, "model": "item/ci/ehpotion"},
+			{"predicate": {"custom_model_data":13}, "model": "item/ci/ntpotion"},
+			{"predicate": {"custom_model_data":14}, "model": "item/ci/bloodbottle"},
+			{"predicate": {"custom_model_data":15}, "model": "item/ci/diamondvapor"},
+			{"predicate": {"custom_model_data":16}, "model": "item/ci/condfpotion"},
+			{"predicate": {"custom_model_data":17}, "model": "item/ci/taglock"},
+			{"predicate": {"custom_model_data":18}, "model": "item/ci/taglock_full"}
+	]
+}
