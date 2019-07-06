@@ -12,7 +12,8 @@
 			{"predicate": {"custom_model_data":5}, "model": "item/ci/chains"},
 			{"predicate": {"custom_model_data":6}, "model": "item/ci/fateii"},
 			{"predicate": {"custom_model_data":7}, "model": "item/ci/moss_crown"},
-			{"predicate": {"custom_model_data":8}, "model": "item/ci/moss_crown_full"}
+			{"predicate": {"custom_model_data":8}, "model": "item/ci/moss_crown_full"},
+			{"predicate": {"custom_model_data":9}, "model": "item/ci/botda"}
 
 		]
 }

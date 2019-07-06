@@ -101,7 +101,7 @@
         },
         {
             "type": "bitmap",
-            "file": "minecraft:font/coin_head.png",
+            "file": "minecraft:font/white_backround.png",
             "ascent": 25,
             "height": 47,
             "chars": [

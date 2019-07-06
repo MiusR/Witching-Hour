@@ -45,6 +45,7 @@
 			{"predicate": {"custom_model_data":126}, "model": "item/cb/brazier_full"},
 			{"predicate": {"custom_model_data":127}, "model": "item/ci/spectraldust"},
 			{"predicate": {"custom_model_data":128}, "model": "item/entities/banshee"},
-			{"predicate": {"custom_model_data":129}, "model": "item/entities/banshee_screaming"}
+			{"predicate": {"custom_model_data":129}, "model": "item/entities/banshee_screaming"},
+			{"predicate": {"custom_model_data":130}, "model": "item/entities/book_ui"}
 	]
 }
