@@ -38,3 +38,6 @@ scoreboard objectives add StoredDamage dummy
 scoreboard objectives add PlayerHealth health
 execute as @a[] run scoreboard players operation @s StoredDamage = @s PlayerHealth
 scoreboard players set double StoredDamage 2
+scoreboard objectives add Page dummy
+scoreboard objectives add LastPage dummy
+scoreboard objectives add ParticleTimer dummy

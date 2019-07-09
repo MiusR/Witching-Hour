@@ -1,7 +1,7 @@
 effect give @e[tag=inv] minecraft:invisibility 10 255 true
 effect give @e[tag=fr] minecraft:fire_resistance 10 255 true
 effect give @e[tag=slowf] minecraft:slow_falling 10 1 true
-execute as @a[nbt=!{SelectedItem:{tag:{id:"gold_chalk"}}},nbt=!{SelectedItem:{tag:{id:"white_chalk"}}},nbt=!{SelectedItem:{tag:{id:"infernal_chalk"}}},nbt=!{SelectedItem:{tag:{id:"soul_gem"}}},nbt=!{SelectedItem:{tag:{id:"dimensional_mirror"}}},nbt=!{SelectedItem:{tag:{id:"fates_coin"}}},nbt=!{SelectedItem:{tag:{crownm:1b}}}] run scoreboard players set @s Rclick 0
+execute as @a[nbt=!{SelectedItem:{tag:{id:"gold_chalk"}}},nbt=!{SelectedItem:{tag:{id:"white_chalk"}}},nbt=!{SelectedItem:{tag:{id:"infernal_chalk"}}},nbt=!{SelectedItem:{tag:{id:"soul_gem"}}},nbt=!{SelectedItem:{tag:{id:"dimensional_mirror"}}},nbt=!{SelectedItem:{tag:{id:"fates_coin"}}},nbt=!{SelectedItem:{tag:{crownm:1b}}},nbt=!{SelectedItem:{tag:{id:"book_of_forbbiden_arts_stick"}}}] run scoreboard players set @s Rclick 0
 effect give @e[tag=hj] minecraft:jump_boost 10 5 true
 execute as @e[tag=fnp] at @s run tp @s ~ ~ ~ facing entity @p[distance=..30] eyes
 execute as @e[type=slime] store result score @s Life run data get entity @s AbsorptionAmount
