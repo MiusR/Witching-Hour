@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:2,id:\"catalistic_sword\",Enchantments:[{lvl:4,id:\"minecraft:sharpness\"},{lvl:4,id:\"minecraft:looting\"},{lvl:2,id:\"minecraft:sweeping\"},{lvl:1,id:\"minecraft:mending\"}],Damage:0,HideFlags:63}"
+                            "tag": "{CustomModelData:2,id:\"catalistic_sword\",Enchantments:[{lvl:7,id:\"minecraft:sharpness\"},{lvl:3,id:\"minecraft:sweeping\"},{lvl:1,id:\"minecraft:mending\"}],Damage:0,HideFlags:63}"
                         },
                         {
                             "function": "set_name",
@@ -30,17 +30,12 @@
                                     "italic":false
                                 },
 								{
-                                    "text":"Sharpness IV",
+                                    "text":"Sharpness VII",
                                     "color":"gray",
                                     "italic":false
                                 },
 								{
-                                    "text":"Looting IV",
-                                    "color":"gray",
-                                    "italic":false
-                                },
-								{
-                                    "text":"Sweeping Edge II",
+                                    "text":"Sweeping Edge III",
                                     "color":"gray",
                                     "italic":false
                                 },
