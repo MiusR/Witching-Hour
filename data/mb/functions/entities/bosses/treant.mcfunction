@@ -23,7 +23,7 @@ execute as @e[tag=treanthealth,scores={Life=0}] at @s run kill @e[tag=treantlegf
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run kill @e[tag=treantlegfrontleft,sort=nearest,distance=..2]
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run playsound minecraft:entity.ender_dragon.death master @a[distance=..40] ~ ~ ~ 100 1
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 0 100 force
-execute as @e[tag=treanthealth,scores={Life=0}] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:101,naturecore:1b,display:{Name:"{\"text\":\"Nature's Core\",\"color\":\"green\"}"}}}}
+execute as @e[tag=treanthealth,scores={Life=0}] at @s run loot spawn ~ ~ ~ loot mb:entities/moss_guardian
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run summon experience_orb ~ ~ ~ {Value:15000}
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run tp @s ~ -500 ~
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run kill @s
@@ -65,7 +65,7 @@ execute as @e[tag=treantp] at @s run particle minecraft:composter ~ ~ ~ 0.3 0.3 
 execute as @e[tag=treantp] at @s unless block ~ ~ ~ air run kill @s
 execute as @e[tag=treantp] at @s run scoreboard players add @s Life 1
 execute as @e[tag=treantp,scores={Life=50..}] at @s run kill @s
-execute as @e[tag=treantp] at @s run effect give @p[distance=..3] minecraft:poison 4 2 true
+execute as @e[tag=treantp] at @s run effect give @p[distance=..3,nbt={ActiveEffects:[{Id:19b,Amplifier:2b}]}] minecraft:poison 4 2 true
 execute as @e[tag=beam,scores={ADTT=30..}] at @s run tag @e[distance=..2] remove tcab1
 execute as @e[tag=beam,scores={ADTT=30..}] at @s run tag @s remove beam
 execute as @e[tag=treantheaddown,scores={ADTT=30..}] at @s run scoreboard players reset @s ADTT

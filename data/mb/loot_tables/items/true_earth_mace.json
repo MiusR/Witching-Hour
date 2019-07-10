@@ -5,17 +5,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:firework_rocket",
+                    "name": "minecraft:diamond_sword",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:1,id:\"brazier\",Fireworks:{Flight:-2},HideFlags:63}"
+                            "tag": "{CustomModelData:1,id:\"true_earth_mace\",Damage:0,HideFlags:63,AttributeModifiers:[{AttributeName:\"generic.knockbackResistance\",Name:\"generic.knockbackResistance\",Amount:100,Operation:0,UUIDLeast:237677,UUIDMost:653110,Slot:\"mainhand\"},{AttributeName:\"generic.attackDamage\",Name:\"generic.attackDamage\",Amount:7,Operation:0,UUIDLeast:237677,UUIDMost:653110,Slot:\"mainhand\"}]}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "Brazier",
+                                "text": "True Earth Mace",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -33,7 +33,7 @@
                                     "text":" "
                                 },
 								{
-                                    "text":"Who' ready to summon spirits?",
+                                    "text":"Think like rock, be like rock!",
 									"color":"dark_gray",
 									"italic":false
                                 },

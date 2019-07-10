@@ -5,17 +5,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:firework_rocket",
+                    "name": "minecraft:glowstone_dust",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:1,id:\"brazier\",Fireworks:{Flight:-2},HideFlags:63}"
+                            "tag": "{CustomModelData:101,id:\"natures_core\"}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "Brazier",
+                                "text": "Nature's Core",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -25,15 +25,20 @@
                             "lore" : 
                             [
                                 {
-                                    "text":"[Artifact]",
-                                    "color":"gold",
+                                    "text":"[Ingredient]",
+                                    "color":"green",
                                     "italic":false
                                 },
                                 {
                                     "text":" "
                                 },
 								{
-                                    "text":"Who' ready to summon spirits?",
+                                    "text":"It's pulsing with",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":"natures essence.",
 									"color":"dark_gray",
 									"italic":false
                                 },

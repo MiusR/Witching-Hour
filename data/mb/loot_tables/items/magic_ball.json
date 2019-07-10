@@ -5,11 +5,11 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:glowstone_dust",
+                    "name": "minecraft:firework_rocket",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:123,id:\"magic_ball\"}"
+                            "tag": "{CustomModelData:2,id:\"magic_ball\",Fireworks:{Flight:-2},HideFlags:63}"
                         },
                         {
                             "function": "set_name",

@@ -2,5 +2,5 @@ execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=
 execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rboentrapment] at @s run tag @s add timer
 execute as @e[type=armor_stand,tag=cauldron,tag=rboentrapment] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] add rpo
 execute as @e[type=armor_stand,tag=cauldron,tag=rboentrapment] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboentrapment] at @s run loot spawn ~ ~ ~ loot mb:items/cauldron/brew_of_entrapment
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboentrapment] at @s run loot spawn ~ ~ ~ loot mb:crafting/cauldron/brew_of_entrapment
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rboentrapment] at @s run tag @s remove rboentrapment
