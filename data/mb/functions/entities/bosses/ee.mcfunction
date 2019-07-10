@@ -18,7 +18,7 @@ execute as @e[tag=eehealth,scores={Life=0}] at @s run kill @e[tag=eetorso,sort=n
 execute as @e[tag=eehealth,scores={Life=0}] at @s run playsound minecraft:entity.ender_dragon.death master @a[distance=..40] ~ ~ ~ 100 1
 execute as @e[tag=eehealth,scores={Life=0}] at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 0 100 force
 execute as @e[tag=eehealth,scores={Life=0}] at @s run summon experience_orb ~ ~ ~ {Value:7000}
-execute as @e[tag=eehealth,scores={Life=0}] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:diamond_sword",Count:1b,tag:{CustomModelData:1,display:{Name:"{\"text\":\"True Earth Mace\",\"color\":\"green\"}",Lore:["{\"text\":\"Think like rock, be the rock!\",\"color\":\"blue\"}"]},AttributeModifiers:[{AttributeName:"generic.knockbackResistance",Name:"generic.knockbackResistance",Amount:100,Operation:0,UUIDLeast:237677,UUIDMost:653110,Slot:"mainhand"}]}}}
+execute as @e[tag=eehealth,scores={Life=0}] at @s run loot spawn ~ ~ ~ loot mb:entities/earth_elemental 
 execute as @e[tag=eehealth,scores={Life=0}] at @s run tp @s ~ -500 ~
 execute as @e[tag=eehealth] at @s unless score @s Life = @s LHBH run playsound minecraft:entity.iron_golem.hurt master @a[distance=..20] ~ ~ ~ 100 1
 execute as @e[tag=eehealth] store result score @s LHBH run data get entity @s AbsorptionAmount

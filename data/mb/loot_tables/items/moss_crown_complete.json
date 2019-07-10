@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:7,id:\"moss_crown_complete\",Unbreakable:1b,HideFlags:63,Damage:0}"
+                            "tag": "{CustomModelData:8,id:\"moss_crown_complete\",Unbreakable:1b,HideFlags:63,Damage:0}"
                         },
                         {
                             "function": "set_name",

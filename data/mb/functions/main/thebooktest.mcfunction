@@ -25,8 +25,8 @@ execute as @a[scores={Sneak=1..}] at @s if entity @e[tag=book_ui,distance=..6] s
 execute as @e[tag=book_ui] at @s if entity @p[distance=..3,scores={Sneak=1..}] run kill @s
 execute as @e[tag=book_ui,tag=done,tag=done1,tag=done3] at @s run particle minecraft:enchant ~ ~1.3 ~ 0 0 0 1 1
 execute as @e[tag=book_ui,tag=done,tag=done1,tag=done3] at @s unless block ~ ~-1 ~ air unless block ~ ~0.3 ~ chest run setblock ~ ~0.3 ~ chest[type=left]{CustomName:"{\"text\":\"Babbling Book\",\"color\":\"dark_gray\"}"}
-execute as @e[tag=book_ui,tag=!done2,tag=done1,tag=done3] at @s if block ~ ~0.3 ~ chest run function mb:main/bookpage
-execute as @e[tag=book_ui,tag=!done2,tag=done1,tag=done3] at @s if block ~ ~0.3 ~ chest run tag @s add done2
+execute as @e[tag=book_ui,tag=!done2,tag=done1,tag=done3] at @s if block ~ ~0.3 ~ chest unless block ~ ~-1 ~ air run function mb:main/bookpage
+execute as @e[tag=book_ui,tag=!done2,tag=done1,tag=done3] at @s if block ~ ~0.3 ~ chest unless block ~ ~-1 ~ air run tag @s add done2
 
 
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s run function mb:main/bookpageselector

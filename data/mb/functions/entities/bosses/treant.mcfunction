@@ -23,7 +23,7 @@ execute as @e[tag=treanthealth,scores={Life=0}] at @s run kill @e[tag=treantlegf
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run kill @e[tag=treantlegfrontleft,sort=nearest,distance=..2]
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run playsound minecraft:entity.ender_dragon.death master @a[distance=..40] ~ ~ ~ 100 1
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run particle minecraft:explosion ~ ~ ~ 1 1 1 0 100 force
-execute as @e[tag=treanthealth,scores={Life=0}] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:101,naturecore:1b,display:{Name:"{\"text\":\"Nature's Core\",\"color\":\"green\"}"}}}}
+execute as @e[tag=treanthealth,scores={Life=0}] at @s run loot spawn ~ ~ ~ loot mb:entities/moss_guardian
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run summon experience_orb ~ ~ ~ {Value:15000}
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run tp @s ~ -500 ~
 execute as @e[tag=treanthealth,scores={Life=0}] at @s run kill @s

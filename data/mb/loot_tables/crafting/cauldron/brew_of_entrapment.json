@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "mb:items/brew_of_entrapment",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count":3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
