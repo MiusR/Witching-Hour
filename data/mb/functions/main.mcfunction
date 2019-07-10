@@ -15,6 +15,7 @@ function mb:items/active/necrod
 function mb:items/active/mirror
 function mb:items/active/coinf
 function mb:items/active/mosscrown
+function mb:items/active/broom
 function mb:main/thebook
 
 function mb:main/end

@@ -9,13 +9,13 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:8,id:\"moss_crown_complete\",Unbreakable:1b,HideFlags:63,Damage:0}"
+                            "tag": "{CustomModelData:10,id:\"flying_broom\",Unbreakable:1,HideFlags:63,Enchantments:[{id:\"minecraft:power\",lvl:1}]}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "Moss Crown",
+                                "text": "Flying Broom",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -26,23 +26,18 @@
                             [
                                 {
                                     "text":"[Artifact]",
-                                    "color":"gold",
-                                    "italic":false
-                                },
-								{
-                                    "text":"[Complete]",
-                                    "color":"purple",
+                                    "color":"green",
                                     "italic":false
                                 },
                                 {
                                     "text":" "
                                 },
 								{
-                                    "text":"Perfect, now all kneel before the king!",
-                                    "color":"dark_gray",
-                                    "italic":false
+                                    "text":"Only a black cat could be more iconic.",
+									"color":"dark_gray",
+									"italic":false
                                 },
-                                {
+								{
                                     "text":" "
                                 },
                                 {

@@ -38,3 +38,4 @@ scoreboard objectives add StoredDamage dummy
 scoreboard objectives add PlayerHealth health
 execute as @a[] run scoreboard players operation @s StoredDamage = @s PlayerHealth
 scoreboard players set double StoredDamage 2
+tellraw @a {"text":"Witching Hour Loaded","color":"dark_green"}

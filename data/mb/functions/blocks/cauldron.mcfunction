@@ -174,7 +174,7 @@ execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=riof] at @s r
 execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{id:"redstone_soup"}}},distance=..1] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:emerald",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:vine",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:lily_pad",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] if block ~ ~-1 ~ fire run function mb:items/ingredients/soul-world-infusion
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=riol] at @s run function mb:items/ingredients/soul-world-infusion
 
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{crownm:1b}}},distance=..1] if entity @e[type=item,nbt={Item:{tag:{naturecore:1b}}},distance=..1] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] if block ~ ~-1 ~ fire run function mb:items/active/moss-crown-complete
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{id:"moss_crown_incompleat"}}},distance=..1] if entity @e[type=item,nbt={Item:{tag:{id:"natures_core"}}},distance=..1] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] if block ~ ~-1 ~ fire run function mb:items/active/moss-crown-complete
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rmcf] at @s run function mb:items/active/moss-crown-complete
 
 
