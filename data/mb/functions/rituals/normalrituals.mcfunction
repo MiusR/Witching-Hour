@@ -82,6 +82,8 @@ execute as @e[tag=!rtimer,tag=cmgc,nbt={ActiveEffects:[{Id:17b,Amplifier:-1b}]}]
 execute as @e[tag=cmgc,nbt={ActiveEffects:[{Id:17b,Amplifier:-1b}]},scores={Timer=150..},tag=ritualoftheking] run function mb:rituals/ritual-heavycattle
 execute as @e[tag=cmgc,tag=rctimer,nbt={ActiveEffects:[{Id:17b,Amplifier:-1b}]},scores={RRTimer=..36000},tag=ritualofheavycattle] at @s run function mb:rituals/ritual-heavycat1
 
+execute as @e[tag=!rtimer,tag=cmgc,nbt={ActiveEffects:[{Id:5b,Amplifier:-1b}]}] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=600..}] if entity @e[type=item,distance=..3,nbt={Item:{tag:{id:"broom"},Count:1b}}] if entity @e[type=item,distance=..3,nbt={Item:{tag:{id:"flying_ointment"},Count:1b}}] run function mb:rituals/ritual-broom-infusion
+execute as @e[tag=cmgc,nbt={ActiveEffects:[{Id:5b,Amplifier:-1b}]},scores={Timer=150..},tag=ritualofthebroom] run function mb:rituals/ritual-broom-infusion
 
 execute as @e[tag=cmgc,tag=rtimer,nbt={ActiveEffects:[{Id:1b,Amplifier:-1b}]},scores={Timer=150..},tag=!ritualoftheventhorizon,tag=!ritualofheavycattle] at @s run particle minecraft:end_rod ~ ~ ~ 0 0 0 0.5 200
 execute as @e[tag=cmgc,scores={Timer=150..},tag=!ritualoftheventhorizon,tag=!ritualofheavycattle] at @s run tp @s ~ ~ ~ 0 ~
