@@ -41,3 +41,4 @@ scoreboard players set double StoredDamage 2
 scoreboard objectives add Page dummy
 scoreboard objectives add LastPage dummy
 scoreboard objectives add ParticleTimer dummy
+tellraw @a {"text":"Witching Hour loaded","color":"dark_green"}

@@ -13,7 +13,7 @@ execute as @e[tag=sweep] at @s run playsound minecraft:block.sand.break master @
 execute as @e[tag=sweep] run kill @s
 
 
-execute as @a[nbt={SelectedItem:{tag:{id:"flying_broom"}}},scores={Rclick=1..}] at @s if block ^ ^ ^1 #mb:passable run summon armor_stand ^ ^ ^1 {ArmorItems:[{},{},{},{id:"minecraft:stone",Count:1b}],Passengers:[{id:"minecraft:pig",Tags:["inv","broom_saddle"],DeathLootTable:"minecraft:empty",Saddle:1,Invulnerable:1,Silent:1,NoAI:1}],Invulnerable:1,Invisible:1,Tags:["flying_broom","slowf"],Small:1}
+execute as @a[nbt={SelectedItem:{tag:{id:"flying_broom"}}},scores={Rclick=1..}] at @s if block ^ ^ ^1 #mb:passable run summon armor_stand ^ ^ ^1 {ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{CustomModelData:10}}],Passengers:[{id:"minecraft:pig",Tags:["inv","broom_saddle"],DeathLootTable:"minecraft:empty",Saddle:1,Invulnerable:1,Silent:1,NoAI:1}],Invulnerable:1,Invisible:1,Tags:["flying_broom","slowf"],Small:1}
 execute as @a[nbt={SelectedItem:{tag:{id:"flying_broom"}}},scores={Rclick=1..}] at @s if block ^ ^ ^1 #mb:passable run playsound minecraft:item.armor.equip_generic player @a ~ ~ ~
 execute as @a[nbt={SelectedItem:{tag:{id:"flying_broom"}}},scores={Rclick=1..}] at @s if block ^ ^ ^1 #mb:passable run replaceitem entity @s weapon.mainhand air
 
