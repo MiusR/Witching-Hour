@@ -17,5 +17,6 @@ function mb:items/active/coinf
 function mb:items/active/mosscrown
 function mb:items/active/broom
 function mb:main/thebook
+function mb:main/thebooktest
 
 function mb:main/end
