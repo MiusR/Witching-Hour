@@ -11,6 +11,7 @@
 			{"predicate": {"custom_model_data":3}, "model": "item/ci/blindeyei"},
 			{"predicate": {"custom_model_data":4}, "model": "item/ci/sotpi"},
 			{"predicate": {"custom_model_data":5}, "model": "item/ci/fatei"},
-			{"predicate": {"custom_model_data":6}, "model": "item/ci/softw"}
+			{"predicate": {"custom_model_data":6}, "model": "item/ci/softw"},
+			{"predicate": {"custom_model_data":7}, "model": "item/ci/flointment"}
 		]
 }
