@@ -4,9 +4,17 @@ execute as @e[tag=book_ui,scores={Page=0}] at @s unless block ~ ~0.3 ~ chest{Ite
 execute as @e[tag=book_ui,scores={Page=0}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:6b,tag:{page:4b}}]} run scoreboard players set @s Page 3
 execute as @e[tag=book_ui,scores={Page=0}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:8b,tag:{page:5b}}]} run scoreboard players set @s Page 4
 execute as @e[tag=book_ui,scores={Page=0}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:10b,tag:{page:6b}}]} run scoreboard players set @s Page 5
-
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
+execute as @e[tag=book_ui,scores={Page=4}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:0b,tag:{page:7b}}]} run scoreboard players set @s Page 6
+execute as @e[tag=book_ui,scores={Page=4}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:2b,tag:{page:8b}}]} run scoreboard players set @s Page 7
+execute as @e[tag=book_ui,scores={Page=11}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:7b}}]} run scoreboard players set @s Page 7
+execute as @e[tag=book_ui,scores={Page=4}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:4b,tag:{page:9b}}]} run scoreboard players set @s Page 8
+execute as @e[tag=book_ui,scores={Page=4}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:6b,tag:{page:10b}}]} run scoreboard players set @s Page 9
+execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
+execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
+execute as @e[tag=book_ui,scores={Page=7}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:11b}}]} run scoreboard players set @s Page 11
+
 
 ###Place text here
 execute as @e[tag=book_ui,scores={Page=3}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:0b,tag:{text:evil_pumpkin}}]} run tellraw @p [{"text":"<Babbling Book> ","color":"gold","italic":false},{"text":"The evil pumpkin is a mischiefous creature that likes to hide and wait for its prey. It can be found in the wild or summoned using a cauldron.\n\nDrops : Horror Dust!","color":"reset"}]
@@ -20,4 +28,4 @@ execute as @e[tag=book_ui,scores={Page=1..}] at @s unless block ~ ~0.3 ~ chest{I
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:22b,tag:{page:0b}}]} run function mb:main/bookpage
 
 
-#################page 11
+#################page 12
