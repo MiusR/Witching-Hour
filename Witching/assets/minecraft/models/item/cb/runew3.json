@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/rune_3",
-		"particle": "block/rune_3"
+		"0": "block/runew_3",
+		"particle": "block/runew_3"
 	},
 	"elements": [
 		{
