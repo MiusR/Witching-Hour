@@ -124,7 +124,7 @@
 			"scale": [1.5, 1.5, 1.5]
 		},
 		"head": {
-			"translation": [0, -7, 0],
+			"translation": [0, -7.75, 0],
 			"scale": [3, 3, 3]
 		}
 	}
