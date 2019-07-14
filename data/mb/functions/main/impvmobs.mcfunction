@@ -43,7 +43,7 @@ execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run loot spawn ~ ~ ~ loot m
 execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run tp @s ~ -150 ~
 execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run scoreboard players reset @s Life
 execute as @e[tag=evilpumpkin,scores={Life=0}] at @s run kill @s
-execute as @e[tag=s_frog] at @s run summon slime ~ ~ ~ {DeathLootTable:"56789",AbsorptionAmount:14f,Size:1,Tags:["inv","frog"],Attributes:[{Name:generic.attackDamage,Base:0}],CustomName:"\"Frog\""}
+execute as @e[tag=s_frog] at @s run summon slime ~ ~ ~ {DeathLootTable:"56789",AbsorptionAmount:14f,Size:0,Tags:["inv","frog"],Attributes:[{Name:generic.attackDamage,Base:0},{Name:generic.followRange,Base:0}]}
 execute as @e[tag=frog,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["frog_gfx"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:12}}]}
 execute as @e[tag=frog,tag=!done] at @s run tag @s add done
 execute as @e[tag=frog_gfx] at @s run tp @s @e[tag=frog,tag=done,limit=1,distance=..2,sort=nearest]

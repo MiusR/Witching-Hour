@@ -2,5 +2,5 @@ execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=
 execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rsf] at @s run tag @s add timer
 execute as @e[type=armor_stand,tag=cauldron,tag=rsf] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] add rlp
 execute as @e[type=armor_stand,tag=cauldron,tag=rsf] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rsf] at @s run summon slime ~ ~1 ~ {DeathLootTable:"56789",AbsorptionAmount:5f,Size:1,Tags:["inv","frog"],Attributes:[{Name:generic.attackDamage,Base:0}]}
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rsf] at @s run summon slime ~ ~1 ~ {DeathLootTable:"56789",AbsorptionAmount:5f,Size:0,Tags:["inv","frog"],Attributes:[{Name:generic.attackDamage,Base:0},{Name:generic.followRange,Base:0}]}
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rsf] at @s run tag @s remove rsf
