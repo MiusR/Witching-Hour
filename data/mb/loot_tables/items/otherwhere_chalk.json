@@ -9,13 +9,13 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:1,id:\"white_chalk\",Damage:0}"
+                            "tag": "{CustomModelData:11,id:\"otherwhere_chalk\",Damage:0}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "White Chalk",
+                                "text": "Otherwhere Chalk",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -33,7 +33,7 @@
                                     "text":" "
                                 },
 								{
-                                    "text":"The good old chalk. 2 + 2 = ?",
+                                    "text":"Otherwhere, but where?",
 									"color":"dark_gray",
 									"italic":false
                                 },
