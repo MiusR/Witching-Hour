@@ -1,0 +1,13 @@
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove bone
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove diamond
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove chicken
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove azure_bluet
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove dark_oak
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove lilotv
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove iron_ingot
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove birch_log
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove spectral_dust
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove luck
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove gold_ingot
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove redstone
+execute as @e[tag=brazier,tag=hasitems] at @s if block ~ ~ ~ fire run tag @s remove dead_bush

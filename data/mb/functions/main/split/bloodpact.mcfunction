@@ -1,0 +1,9 @@
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true] run loot spawn ~ ~1 ~ loot mb:items/blood_pact
+execute as @e[type=item,tag=!init,nbt={Item:{tag:{id:"blood_pact",taglockdata:0}}}] at @s store result entity @s Item.tag.taglockdata int 1 run data get entity @e[limit=1,type=item,nbt={Item:{tag:{id:"taglock_kit"}}},distance=..1] Item.tag.taglockdata 1
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=east] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=east]
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=west] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=west]
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=north] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=north]
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=south] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=south]
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=false] if entity @e[type=item,nbt={Item:{tag:{id:"blood_pact"}}}] run playsound minecraft:block.lava.extinguish master @a[distance=..15] ~ ~ ~ 100 1
+execute as @e[type=item,nbt={Item:{tag:{id:"taglock_kit"}},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=false] if entity @e[type=item,nbt={Item:{tag:{id:"blood_pact"}}}] run particle minecraft:cloud ~ ~ ~ 0 0 0 0.1 10
+execute as @e[type=item,tag=!init,nbt={Item:{tag:{id:"blood_pact"}}}] at @s run kill @e[type=item,distance=..1,limit=1,nbt={Item:{tag:{id:"taglock_kit"}}}]

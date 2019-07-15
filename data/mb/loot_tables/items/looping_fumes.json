@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:6,id:\"fleshy_unguent\"}"
+                            "tag": "{CustomModelData:6,id:\"looping_fumes\"}"
                         },
                         {
                             "function": "set_name",

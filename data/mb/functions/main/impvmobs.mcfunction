@@ -1,9 +1,5 @@
 scoreboard players set counter count 0
 scoreboard players set scounter count 0
-#execute as @e[type=bat,tag=!changed] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:string",Count:1b,tag:{display:{Name:"{\"text\":\"Wool of Bat\",\"color\":\"green\"}"},CustomModelData:1,id:"wool_of_bat"}}],ArmorDropChances:[0.85F,0.85F,0.85F,0.4F]}
-#execute as @e[type=bat,tag=!changed] run tag @s add changed
-#execute as @e[type=wolf,tag=!changed] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{display:{Name:"{\"text\":\"Tongue of Dog\",\"color\":\"green\"}"},CustomModelData:124,id:"tounge_of_dog"}}],ArmorDropChances:[0.85F,0.85F,0.85F,0.4F]}
-#execute as @e[type=wolf,tag=!changed] run tag @s add changed
 execute as @e[type=zombie,tag=!found] run scoreboard players add counter count 1
 execute as @e[type=enderman,tag=!found] in minecraft:overworld run scoreboard players add scounter count 1
 execute as @a[] at @s run tag @e[type=zombie,distance=..16] add found
