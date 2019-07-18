@@ -1,1 +1,0 @@
-scoreboard players set @a[scores={Sneak=1..}] Sneak 0
