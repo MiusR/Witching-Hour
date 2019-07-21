@@ -1,5 +1,5 @@
 execute as @e[tag=brazier,tag=bone,tag=dark_oak,tag=lilotv,tag=ignited] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=50..}] run tag @s add bdeathlyvail
-execute as @e[tag=brazier,tag=bone,tag=dark_oak,tag=lilotv,tag=ignited] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=50..}] run scoreboard players set @s braziertimer 2400
+execute as @e[tag=brazier,tag=bone,tag=dark_oak,tag=lilotv,tag=ignited] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=50..}] run scoreboard players set @s braziertimer 480
 execute as @e[tag=brazier,tag=bone,tag=dark_oak,tag=lilotv,tag=ignited] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=50..}] run tag @e[tag=magicaltar,distance=..20,limit=1] add rorain
 execute as @e[tag=brazier,tag=bdeathlyvail] at @s run particle minecraft:large_smoke ~ ~ ~ 10 5 10 0 20 force
 execute as @e[tag=brazier,tag=bdeathlyvail] at @s run effect give @a[distance=..20,gamemode=survival] minecraft:blindness 2 255

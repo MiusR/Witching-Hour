@@ -4,7 +4,7 @@ execute as @a[nbt={SelectedItem:{tag:{id:"gold_chalk"}}},gamemode=survival] stor
 execute as @a[nbt={SelectedItem:{tag:{id:"white_chalk"}}},gamemode=survival] store result score @s chalkdurability run data get entity @s SelectedItem.tag.Damage 1
 execute as @a[nbt={SelectedItem:{tag:{id:"infernal_chalk"}}},gamemode=survival] store result score @s chalkdurability run data get entity @s SelectedItem.tag.Damage 1
 
-execute as @a[scores={Rclick=1..},gamemode=survival] at @s unless entity @e[distance=..1,tag=cmgc] unless entity @e[distance=..1,tag=cmic] unless entity @e[distance=..1,tag=cmwc] unless block ~ ~ ~ water unless block ~ ~-1 ~ air run function mb:main/split/chalkplacment
+execute as @a[scores={Rclick=1..}] at @s unless entity @e[distance=..1,tag=cmgc] unless entity @e[distance=..1,tag=cmic] unless entity @e[distance=..1,tag=cmwc] unless block ~ ~ ~ water unless block ~ ~-1 ~ air run function mb:main/split/chalkplacment
 
 execute as @a[nbt={SelectedItem:{tag:{id:"gold_chalk",Damage:25}}},gamemode=survival] run replaceitem entity @s weapon.mainhand minecraft:yellow_dye 1
 execute as @a[nbt={SelectedItem:{tag:{id:"white_chalk",Damage:25}}},gamemode=survival] run replaceitem entity @s weapon.mainhand minecraft:white_dye 1
