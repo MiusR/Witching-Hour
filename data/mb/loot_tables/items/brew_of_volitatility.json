@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:4,id:\"brew_of_volitatility\",CustomPotionColor:161711680,HideFlags:63,Enchantments:[{lvl:1,id:\"minecraft:power\"}]}"
+                            "tag": "{CustomModelData:4,id:\"brew_of_volitatility\",CustomPotionColor:10223616,HideFlags:63,Enchantments:[{lvl:1,id:\"minecraft:power\"}]}"
                         },
                         {
                             "function": "set_name",
