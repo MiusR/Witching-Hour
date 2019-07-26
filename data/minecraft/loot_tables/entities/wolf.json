@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+              }
+            
+          ],
+          "name": "mb:items/tounge_of_dog"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+		{
+			"condition": "minecraft:random_chance",
+			"chance": 0.4
+		}
+      ]
+    }
+  ]
+}
