@@ -15,7 +15,18 @@ execute as @e[tag=book_ui,scores={Page=4}] at @s unless block ~ ~0.3 ~ chest{Ite
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
 execute as @e[tag=book_ui,scores={Page=7}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:11b}}]} run scoreboard players set @s Page 11
+execute as @e[tag=book_ui,scores={Page=5}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:11b,tag:{page:100b}}]} run scoreboard players set @s Page 100
+execute as @e[tag=book_ui,scores={Page=5}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:15b,tag:{page:500b}}]} run scoreboard players set @s Page 500
+execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
+execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
 
+execute as @e[tag=book_ui,scores={Page=102..499}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
+execute as @e[tag=book_ui,scores={Page=101..}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
+execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
+execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
+
+
+execute as @e[tag=book_ui,scores={Page=100}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:2b,tag:{page:101}}]} run scoreboard players set @s Page 101
 
 ###Place text here
 execute as @e[tag=book_ui,scores={Page=3}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:0b,tag:{text:evil_pumpkin}}]} run tellraw @p [{"text":"<Babbling Book> ","color":"gold","italic":false},{"text":"These mischievous creatures! They hide in plain sight and surprise you  when you least expect it! But they drop Horror Dust, which comes in hand in my experiments. It would be easy if I could just summon them in… what if.. I may have a cauldron ritual just for this situation!","color":"reset"}]

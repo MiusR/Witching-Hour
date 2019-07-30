@@ -9,7 +9,7 @@ execute as @a[nbt={SelectedItem:{tag:{id:"moss_crown_complete"}}},scores={Rclick
 
 execute as @a[nbt={Inventory:[{Slot:103b,tag:{id:"moss_crown_complete"}}]},scores={Sneak=1..},tag=sotwi] at @s run tag @s add mswave
 execute as @a[tag=mswave,scores={Sneak=1..,PlayerInfP=8..}] at @s run particle minecraft:totem_of_undying ^ ^1.5 ^8 0 0 0 0.2 5
-execute as @a[tag=mswave,scores={Sneak=1..,PlayerInfP=8..}] at @s positioned ^ ^ ^4 run tp @e[type=!player,distance=..6,type=!armor_stand] ^ ^ ^4
+execute as @a[tag=mswave,scores={Sneak=1..,PlayerInfP=8..}] at @s positioned ^ ^ ^4 run tp @e[tag=!mswave,distance=..6,type=!armor_stand] ^ ^ ^4
 execute as @a[tag=mswave,scores={Sneak=1..,PlayerInfP=8..}] at @s run scoreboard players remove @s PlayerInfP 8
 execute as @a[tag=mswave,scores={Sneak=1..}] at @s run tag @s add forceDIP
 execute as @a[tag=mswave,scores={Sneak=1..,PlayerInfP=8..}] at @s run tag @s remove mswave

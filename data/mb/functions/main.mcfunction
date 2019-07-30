@@ -12,3 +12,4 @@ execute as @e[tag=book_ui,tag=!done] at @s if block ^ ^ ^1 air run tp @s ^ ^ ^1
 execute as @e[tag=book_ui,tag=!done] at @s run tp @s ~ ~ ~ ~ ~2
 function mb:main/split/crystalballplacement
 function mb:main/split/brazierplacement
+execute as @e[tag=book_ui,tag=done,tag=done3] at @s if block ~ ~-1 ~ air run tp @s ~ ~-0.2 ~

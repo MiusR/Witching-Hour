@@ -14,7 +14,6 @@ execute as @e[tag=book_ui,tag=done,tag=!done3] at @s run playsound minecraft:blo
 execute as @e[tag=book_ui,tag=done,tag=!done3] at @s align xyz positioned ~.5 ~ ~.5 run tp @s ~ ~ ~
 execute as @e[tag=book_ui,tag=done,tag=!done3] at @s run tag @s add done3
 execute as @e[tag=book_ui,tag=done,tag=done3] at @s run tp @s ~ ~ ~ facing entity @p
-execute as @e[tag=book_ui,tag=done,tag=done3] at @s if block ~ ~-1 ~ air run tp @s ~ ~-0.2 ~
 execute as @e[tag=book_ui] at @s if entity @p[distance=..3,scores={Sneak=1..}] run particle minecraft:cloud ~ ~1 ~ 0.3 0.3 0.3 0 20 force
 execute as @e[tag=book_ui] at @s if entity @p[distance=..3,scores={Sneak=1..}] run loot spawn ~ ~ ~ loot mb:items/book_of_forbbiden_arts_stick
 execute as @e[tag=book_ui] at @s if entity @p[distance=..3,scores={Sneak=1..}] run setblock ~ ~0.3 ~ air
