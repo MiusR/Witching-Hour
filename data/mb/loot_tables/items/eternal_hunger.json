@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:2,id:\"eternal_hunger\"}"
+                            "tag": "{CustomModelData:12,id:\"eternal_hunger\"}"
                         },
                         {
                             "function": "set_name",

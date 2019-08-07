@@ -43,6 +43,7 @@ execute as @e[tag=clockb,tag=done,scores={PatienceP=..0}] run kill @s
 
 execute as @e[type=minecraft:potion,nbt={Potion:{tag:{id:"brew_of_love"}}},tag=!done] at @s run function mb:entities/potions/entity-love
 execute as @e[tag=bolovef] at @s run function mb:entities/potions/entity-love
+execute as @e[tag=love] at @s run function mb:entities/potions/entity-love
 
 execute as @e[type=minecraft:potion,nbt={Potion:{tag:{id:"brew_of_raising"}}},tag=!done] at @s run function mb:entities/potions/entity-raising
 execute as @e[tag=borasisingf] at @s run function mb:entities/potions/entity-raising

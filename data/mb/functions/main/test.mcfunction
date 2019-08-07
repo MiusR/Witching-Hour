@@ -40,3 +40,4 @@ execute as @a[] run scoreboard players operation @s StoredDamage = @s PlayerHeal
 scoreboard players set double StoredDamage 2
 tellraw @a {"text":"Witching Hour Loaded","color":"dark_green"}
 scoreboard objectives add mb_PowerCost dummy
+scoreboard objectives add Age dummy
