@@ -14,8 +14,8 @@ function mb:main/thebooktest
 function mb:main/thebook
 function mb:blocks/altar
 function mb:blocks/cauldron
-function mb:rituals/normalrituals
 function mb:rituals/chalkritualc
+function mb:rituals/normalrituals
 function mb:items/active/necrod
 execute as @e[tag=banshee] at @s run function mb:entities/normal/banshee
 

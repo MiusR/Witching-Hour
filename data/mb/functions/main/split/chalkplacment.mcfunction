@@ -42,3 +42,7 @@ execute as @e[tag=irc,tag=3] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,In
 execute as @e[tag=irc,tag=4] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["cmic"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:116}}]}
 execute as @e[tag=irc,tag=5] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["cmic"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:117}}]}
 execute as @e[tag=irc,tag=6] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["cmic"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:118}}]}
+
+kill @e[tag=grc]
+kill @e[tag=irc]
+kill @e[tag=wrc]

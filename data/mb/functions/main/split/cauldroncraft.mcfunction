@@ -162,3 +162,6 @@ execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=riol] at @s r
 
 execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{id:"moss_crown_incompleat"}}},distance=..1] if entity @e[type=item,nbt={Item:{tag:{id:"natures_core"}}},distance=..1] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=50..},limit=1] if block ~ ~-1 ~ fire run function mb:items/active/moss-crown-complete
 execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rmcf] at @s run function mb:items/active/moss-crown-complete
+
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{id:"skys_tear"},Count:1b}},distance=..1] if entity @e[type=item,nbt={Item:{tag:{id:"redstone_soup"},Count:1b}},distance=..1] if entity @e[type=item,nbt={Item:{id:"minecraft:feather",Count:1b}},distance=..1] if entity @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:1b}},distance=..1] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] if block ~ ~-1 ~ fire run function mb:items/ingredients/flying-ointment
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rflyingointment] at @s run function mb:items/ingredients/flying-ointment

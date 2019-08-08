@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{id:"skys_tear"}}},distance=..1] if entity @e[type=item,nbt={Item:{tag:{id:"redstone_soup"}}},distance=..1] if entity @e[type=item,nbt={Item:{id:"minecraft:feather"}},distance=..1] if entity @e[type=item,nbt={Item:{id:"minecraft:diamond"}},distance=..1] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=200..},limit=1] if block ~ ~-1 ~ fire run tag @s add rflyingointment
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rflyingointment] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=rflyingointment] at @s run scoreboard players set @e[tag=magicaltar,distance=..20,scores={Power=200..},limit=1] mb_PowerCost 200
+execute as @e[type=armor_stand,tag=cauldron,tag=rflyingointment] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rflyingointment] at @s run loot spawn ~ ~ ~ loot mb:items/flying_ointment
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rflyingointment] at @s run tag @s remove rflyingointment
