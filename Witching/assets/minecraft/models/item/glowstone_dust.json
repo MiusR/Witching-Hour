@@ -48,6 +48,12 @@
 			{"predicate": {"custom_model_data":129}, "model": "item/entities/banshee_screaming"},
 			{"predicate": {"custom_model_data":130}, "model": "item/entities/book_ui"},
 			{"predicate": {"custom_model_data":131}, "model": "item/cb/cauldron"},
-			{"predicate": {"custom_model_data":132}, "model": "item/cb/cauldron_active"}
+			{"predicate": {"custom_model_data":132}, "model": "item/cb/cauldron_active"},
+			{"predicate": {"custom_model_data":133}, "model": "item/cb/runeo1"},
+			{"predicate": {"custom_model_data":134}, "model": "item/cb/runeo2"},
+			{"predicate": {"custom_model_data":135}, "model": "item/cb/runeo3"},
+			{"predicate": {"custom_model_data":136}, "model": "item/cb/runeo4"},
+			{"predicate": {"custom_model_data":137}, "model": "item/cb/runeo5"},
+			{"predicate": {"custom_model_data":138}, "model": "item/cb/runeo6"}
 	]
 }

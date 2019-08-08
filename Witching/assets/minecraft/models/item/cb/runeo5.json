@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/runew_4",
-		"particle": "block/runew_4"
+		"0": "block/runeo_5",
+		"particle": "block/runeo_5"
 	},
 	"elements": [
 		{
