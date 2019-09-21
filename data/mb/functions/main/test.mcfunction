@@ -4,21 +4,14 @@ scoreboard objectives add PTD dummy
 scoreboard objectives add RDT dummy
 scoreboard objectives add count dummy
 scoreboard objectives add EMT dummy
-scoreboard objectives add ADT dummy
-scoreboard objectives add AT dummy
 scoreboard objectives add Random dummy
 scoreboard objectives add Life dummy
 scoreboard objectives add MaxPower dummy
-scoreboard objectives add ADTT dummy
 scoreboard objectives add Power dummy
 scoreboard objectives add Timer dummy
-team add UF
-team add bcnc
-team modify bcnc collisionRule never
 scoreboard objectives add PatienceP dummy
 scoreboard players set 60 PatienceP 100
 scoreboard objectives add EnderC dummy
-team modify UF seeFriendlyInvisibles true
 scoreboard objectives add Rclick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add chalkrunes dummy
 scoreboard objectives add RRTimer dummy
@@ -41,3 +34,5 @@ scoreboard players set double StoredDamage 2
 tellraw @a {"text":"Witching Hour Loaded","color":"dark_green"}
 scoreboard objectives add mb_PowerCost dummy
 scoreboard objectives add Age dummy
+scoreboard objectives add Page dummy
+scoreboard objectives add LastPage dummy

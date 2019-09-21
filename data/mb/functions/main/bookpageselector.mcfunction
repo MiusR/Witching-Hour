@@ -20,16 +20,21 @@ execute as @e[tag=book_ui,scores={Page=5}] at @s unless block ~ ~0.3 ~ chest{Ite
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
 
-execute as @e[tag=book_ui,scores={Page=102..199}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
-execute as @e[tag=book_ui,scores={Page=101..111}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
-execute as @e[tag=book_ui,scores={Page=201..299}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
-execute as @e[tag=book_ui,scores={Page=200..299}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
+execute as @e[tag=book_ui,scores={Page=102..113}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
+execute as @e[tag=book_ui,scores={Page=101..112}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
+execute as @e[tag=book_ui,scores={Page=201..213}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
+execute as @e[tag=book_ui,scores={Page=200..212}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
+execute as @e[tag=book_ui,scores={Page=301..306}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
+execute as @e[tag=book_ui,scores={Page=300..305}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
+execute as @e[tag=book_ui,scores={Page=501..504}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
+execute as @e[tag=book_ui,scores={Page=500..503}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
 
 
 execute as @e[tag=book_ui,scores={Page=100}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:2b,tag:{page:101b}}]} run scoreboard players set @s Page 101
 execute as @e[tag=book_ui,scores={Page=100}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:4b,tag:{page:200b}}]} run scoreboard players set @s Page 200
+execute as @e[tag=book_ui,scores={Page=100}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:6b,tag:{page:300b}}]} run scoreboard players set @s Page 300
 
 
 ###Place text here
@@ -45,11 +50,11 @@ execute as @e[tag=book_ui,scores={Page=3}] at @s unless block ~ ~0.3 ~ chest{Ite
 
 execute as @e[tag=book_ui,scores={Page=3}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:12b,tag:{text:undead_hunter}}]} run tellraw @p [{"text":"<Babbling Book> ","color":"gold","italic":false},{"text":"Some people are uncomfortably close finding my secret, I don’t think the villagers would like me if they knew that I’m a witch… Luckily for me, and unluckily for my enemies I found a necromantic ritual to bring forth deadly hunters to hunt anyone who I want.","color":"reset"}]
 
-execute as @e[tag=book_ui,scores={Page=2}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:0b,tag:{text:pillars}}]} run tellraw @p [{"text":"<Babbling Book> ","color":"gold","italic":false},{"text":"Ancient civilizations that were here at the beginning left some memories of their legion, villagers spread the rumor of pillar like structures that hide a secret they have some strange symbols on them, I can decipher very little of their language but they seem to point to an unknown world, maybe we can get there somehow… The villagers I asked about these mysterious structures just told me some old folk tales about ancient civilizations that disappeared mysteriously without a trace. Maybe I should find these ruins and try to figure out where they disappeared, maybe I’ll find something else interesting there as well.","color":"reset"}]
+execute as @e[tag=book_ui,scores={Page=2}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:0b,tag:{text:pillars}}]} run tellraw @p [{"text":"<Babbling Book> ","color":"gold","italic":false},{"text":"Ancient civilizations that were here at the beginning left some memories which fade out of existance and back in at random, villagers spread the rumor of pillar like structures that hide a secret they have some strange symbols on them, I can decipher very little of their language but they seem to point to an unknown world, maybe we can get there somehow… The villagers I asked about these mysterious structures just told me some old folk tales about ancient civilizations that disappeared mysteriously without a trace. Maybe I should find these ruins and try to figure out where they disappeared, maybe I’ll find something else interesting there as well.","color":"reset"}]
+
+execute as @e[tag=book_ui,scores={Page=2}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:2b,tag:{text:fae_tree}}]} run tellraw @p [{"text":"<Babbling Book> ","color":"gold","italic":false},{"text":"Fairies like to make their hauses in giant tree stumps... why are they all the same don't ask me.\n\nAfter some reaserch I found out that the stumpt isn't ancient the fae picks a stumpt and changes its size with some magic.","color":"reset"}]
+
 
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s if block ~ ~0.3 ~ chest{Items:[{Slot:22b,tag:{page:0b}}]} run function mb:main/bookpage
 execute as @e[tag=book_ui,scores={Page=1..}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:22b,tag:{page:0b}}]} run scoreboard players set @s Page 0
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:22b,tag:{page:0b}}]} run function mb:main/bookpage
-
-
-#################page 12

@@ -4,12 +4,12 @@ execute as @e[type=zombie,tag=!found] run scoreboard players add counter count 1
 execute as @e[type=enderman,tag=!found] in minecraft:overworld run scoreboard players add scounter count 1
 execute as @a[] at @s run tag @e[type=zombie,distance=..16] add found
 execute as @a[] at @s run tag @e[type=enderman,distance=..16] add found
-execute as @e[sort=random,type=zombie,tag=!found,limit=1] if score counter count matches 50 run tag @s add s_evilp
-execute as @e[sort=random,type=zombie,tag=!found,limit=1] if score counter count matches 50 run tag @s add s_frog
-execute as @e[sort=random,type=enderman,tag=!found,limit=1] in overworld if score scounter count matches 20 run tag @s add c_carvedstone
-execute as @e[sort=random,type=enderman,tag=!found,limit=1] in overworld if score scounter count matches 20 if block ~ ~-1 ~ grass_block run tag @s add c_faetree
-execute as @e[tag=!found,type=zombie] if score counter count matches 50 run tag @s add found
-execute as @e[tag=!found,type=enderman] in overworld if score scounter count matches 20 run tag @s add found
+execute as @e[sort=random,type=zombie,tag=!found,limit=1] if score counter count matches 27 run tag @s add s_evilp
+execute as @e[sort=random,type=zombie,tag=!found,limit=1] if score counter count matches 27 run tag @s add s_frog
+execute as @e[sort=random,type=zombie,tag=!found,limit=1] in overworld if score scounter count matches 15 run tag @s add c_carvedstone
+execute as @e[sort=random,type=enderman,tag=!found,limit=1] in overworld if score scounter count matches 6 if block ~ ~-1 ~ grass_block run tag @s add c_faetree
+execute as @e[tag=!found,type=zombie] if score counter count matches 27 run tag @s add found
+execute as @e[tag=!found,type=enderman] in overworld if score scounter count matches 6 run tag @s add found
 execute as @e[tag=c_carvedstone] at @s run setblock ~ ~ ~ minecraft:structure_block{metadata: "", mirror: "NONE", ignoreEntities: 1b, powered: 0b, seed: 0L, author: "Ancient_Spirit", rotation: "NONE", posX: -1, mode: "LOAD", posY: 0, sizeX: 4, posZ: -1, integrity: 1.0f, showair: 0b, x: 4, name: "mb:carvedstone", y: 4, z: -6, id: "minecraft:structure_block", sizeY: 8, sizeZ: 4, showboundingbox: 1b}
 execute as @e[tag=c_faetree] at @s run setblock ~ ~ ~ minecraft:structure_block{metadata: "", mirror: "NONE", powered: 0b, seed: 0L, author: "Ancient_Spirit", rotation: "NONE", posX: -1, mode: "LOAD", posY: -9, sizeX: 4, posZ: -1, integrity: 1.0f, showair: 0b, x: 4, name: "mb:fae_tree", y: 4, z: -6, id: "minecraft:structure_block", sizeY: 8, sizeZ: 4, showboundingbox: 1b}
 execute as @e[tag=c_faetree] at @s run setblock ~ ~1 ~ redstone_block
