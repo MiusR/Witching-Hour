@@ -1,3 +1,7 @@
+# Copyright 2019 Ancient Spirit
+# All rights reserved.
+# Do not delete this section.
+
 function mb:main/misc
 function mb:main/impvmobs
 execute as @e[tag=ees] at @s if entity @p[distance=..8] run function mb:main/split/summonee
