@@ -1,0 +1,11 @@
+execute as @e[tag=roue] at @s run clone ^ ^ ^1 ^ ^ ^1 ^ ^20 ^1 masked move
+execute as @e[tag=roue] at @s run clone ^ ^ ^2 ^ ^ ^2 ^ ^20 ^2 masked move
+execute as @e[tag=roue] at @s run clone ^ ^ ^3 ^ ^ ^3 ^ ^20 ^3 masked move
+execute as @e[tag=roue] at @s run clone ^ ^ ^4 ^ ^ ^4 ^ ^20 ^4 masked move
+execute as @e[tag=roue] at @s run clone ^ ^ ^5 ^ ^ ^5 ^ ^20 ^5 masked move
+execute as @e[tag=moveup20medium1] at @s run clone ^ ^ ^6 ^ ^ ^6 ^ ^20 ^6 masked move
+execute as @e[tag=moveup20medium1] at @s run clone ^ ^ ^7 ^ ^ ^7 ^ ^20 ^7 masked move
+execute as @e[tag=moveup20medium1] at @s run clone ^ ^ ^8 ^ ^ ^8 ^ ^20 ^8 masked move
+execute as @e[tag=moveup20large] at @s run clone ^ ^ ^9 ^ ^ ^9 ^ ^20 ^9 masked move
+execute as @e[tag=moveup20large] at @s run clone ^ ^ ^10 ^ ^ ^10 ^ ^20 ^10 masked move
+execute as @e[tag=moveup20large] at @s run clone ^ ^ ^11 ^ ^ ^11 ^ ^20 ^11 masked move

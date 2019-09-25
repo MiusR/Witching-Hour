@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:1,id:\"redstone_soup\",CustomPotionEffects:[{Duration:5000,Id:1b,Amplifier:3b},{Duration:5000,Id:3b,Amplifier:3b},{Duration:5000,Id:5b,Amplifier:3b},{Duration:5000,Id:8b,Amplifier:3b},{Duration:5000,Id:10b,Amplifier:3b},{Duration:5000,Id:22b,Amplifier:3b}],CustomPotionCollor:1944924,HideFlags:63}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Redstone Soup",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Ingredient]",
+                                    "color":"green",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"Delicious, good for pvp!",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":" "
+                                },
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

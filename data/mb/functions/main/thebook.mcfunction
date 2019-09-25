@@ -1,0 +1,9 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true] run loot spawn ~ ~ ~ loot mb:items/book_of_forbbiden_arts_stick
+
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=east] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=east]
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=west] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=west]
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=north] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=north]
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=true,facing=south] run setblock ~ ~-0.2 ~ minecraft:lectern[has_book=false,facing=south]
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=false] if entity @e[type=item,nbt={Item:{tag:{id:"book_of_forbbiden_arts_stick"}}}] run playsound minecraft:block.lava.extinguish master @a[distance=..15] ~ ~ ~ 100 1
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_pearl",Count:1b},OnGround:1b}] at @s if block ~ ~-0.2 ~ minecraft:lectern[has_book=false] if entity @e[type=item,nbt={Item:{tag:{id:"book_of_forbbiden_arts_stick"}}}] run particle minecraft:cloud ~ ~ ~ 0 0 0 0.1 10
+execute as @e[type=item,tag=!init,nbt={Item:{tag:{id:"book_of_forbbiden_arts_stick"}}}] at @s run kill @e[type=item,distance=..1,limit=1,nbt={Item:{id:"minecraft:ender_pearl"}}]

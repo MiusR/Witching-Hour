@@ -1,0 +1,72 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:1,id:\"book_of_forbbiden_arts\",generation:3,HideFlags:63,author:\"\",title:\"\",pages:['[{\"text\":\"You shouldn\\'t see this...\"}]']}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Book of Forbbiden Arts",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+							"entity": "this", 
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Book]",
+                                    "color":"dark_red",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"What secrets hide within?",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":" "
+                                },
+								[
+									{
+									"text": "by ",
+									"color": "gray",
+									"italic": false
+									},
+									{
+									"selector": "@s",
+									"color": "gray",
+									"italic": false
+									}	
+									
+                                ],
+								{
+                                    "text":" "
+                                },
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

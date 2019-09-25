@@ -1,0 +1,119 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1.0
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+          "name": "mb:items/demon_heart"
+        }
+      ],
+	  "conditions": [
+		{
+			"condition": "random_chance",
+			"chance": 0.3
+		}
+	  ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+				"min": 0.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+			  }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+		  "weight":2,
+          "name": "minecraft:blaze_powder"
+        },
+		{
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+				"min": 0.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+			  }
+            }
+          ],
+		  "weight":1,
+          "name": "minecraft:obsidian"
+        },
+		{
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+				"min": 0.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+			  }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+		  "weight":1,
+          "name": "minecraft:ghast_tear"
+        },
+		{
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+				"min": 0.0,
+                "max": 1.0,
+                "type": "minecraft:uniform"
+			  }
+            },
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": 0.0,
+                "max": 1.0
+              }
+            }
+          ],
+		  "weight":1,
+          "name": "minecraft:nether_wart"
+        }
+      ]
+    }
+  ]
+}

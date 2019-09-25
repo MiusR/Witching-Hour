@@ -1,0 +1,60 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:splash_potion",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{id:\"brew_of_broken_healing\",CustomPotionColor:16751096,HideFlags:63,CustomPotionEffects:[{Duration:20,Id:6b,Amplifier:2b,ShowParticles:0b},{Duration:400,Id:19b,Amplifier:0b,ShowParticles:0b}]}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Brew of Broken Healing",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Brew]",
+                                    "color":"dark_green",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"And heal .. ouch .. ouch ..",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":"heal .. ouch .. ouch",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":" "
+                                },
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

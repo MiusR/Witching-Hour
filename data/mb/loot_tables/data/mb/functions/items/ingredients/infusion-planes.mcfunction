@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{rds:1b}}},distance=..1] if entity @e[type=item,nbt={Item:{tag:{efpotion:1b}}},distance=..1] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:emerald",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:golden_apple",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] if block ~ ~-1 ~ fire run tag @s add riotp
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=riotp] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=riotp,tag=done] at @s run scoreboard players set @e[tag=magicaltar,distance=..20,scores={Power=900..},limit=1] mb_PowerCost 900
+execute as @e[type=armor_stand,tag=cauldron,tag=riotp] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=riotp] at @s run loot spawn ~ ~ ~ loot mb:items/infusion_of_the_planes
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=riotp] at @s run tag @s remove riotp

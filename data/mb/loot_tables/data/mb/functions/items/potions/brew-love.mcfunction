@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,distance=..1,nbt={Item:{tag:{id:"breath_of_the_moss_guardian"}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:wheat",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:lily_pad",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:cookie",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:golden_apple",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] if block ~ ~-1 ~ fire run tag @s add rbolove
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rbolove] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=rbolove] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] add rpo
+execute as @e[type=armor_stand,tag=cauldron,tag=rbolove] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbolove] at @s run loot spawn ~ ~ ~ loot mb:crafting/cauldron/brew_of_love
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbolove] at @s run tag @s remove rbolove

@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,distance=..1,nbt={Item:{tag:{id:"skys_tear"}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:bone",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:quartz",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] if block ~ ~-1 ~ fire run tag @s add rchalkw
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rchalkw] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=rchalkw] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] add rpo
+execute as @e[type=armor_stand,tag=cauldron,tag=rchalkw] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rchalkw] at @s run loot spawn ~ ~ ~ loot mb:items/white_chalk
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rchalkw] at @s run tag @s remove rchalkw

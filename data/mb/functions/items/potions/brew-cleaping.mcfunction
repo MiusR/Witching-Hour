@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,distance=..1,nbt={Item:{tag:{id:"bottled_pain"}}}] if entity @e[type=item,distance=..1,nbt={Item:{tag:{id:"noxious_timing"}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:glowstone_dust",Count:1b,tag:{toeoffrog:1b}}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=100..},limit=1] if block ~ ~-1 ~ fire run tag @s add rbocl
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rbocl] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=rbocl] at @s run scoreboard players set @e[tag=magicaltar,distance=..20,scores={Power=100..},limit=1] mb_PowerCost 100
+execute as @e[type=armor_stand,tag=cauldron,tag=rbocl] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbocl] at @s run loot spawn ~ ~ ~ loot mb:crafting/cauldron/brew_of_cursed_feet
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbocl] at @s run tag @s remove rbocl

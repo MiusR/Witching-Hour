@@ -1,0 +1,6 @@
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,distance=..1,nbt={Item:{tag:{id:"white_chalk"}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:blaze_rod",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:nether_wart",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=100..},limit=1] if block ~ ~-1 ~ fire run tag @s add rchalki
+execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rchalki] at @s run tag @s add timer
+execute as @e[type=armor_stand,tag=cauldron,tag=rchalki] at @s run scoreboard players set @e[tag=magicaltar,distance=..20,scores={Power=100..},limit=1] mb_PowerCost 100
+execute as @e[type=armor_stand,tag=cauldron,tag=rchalki] at @s run kill @e[type=item,distance=..1]
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rchalki] at @s run loot spawn ~ ~ ~ loot mb:items/infernal_chalk
+execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rchalki] at @s run tag @s remove rchalki
