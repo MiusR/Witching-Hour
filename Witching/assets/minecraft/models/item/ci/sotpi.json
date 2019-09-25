@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "item/sotpi",
-        "layer1": "item/sotpi"
-    }
-}

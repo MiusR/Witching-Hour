@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "item/bocobble",
-        "layer1": "item/bocobble"
-    }
-}

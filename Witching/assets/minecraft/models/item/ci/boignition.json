@@ -1,7 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "item/boignition",
-        "layer1": "item/boignition"
-    }
-}
