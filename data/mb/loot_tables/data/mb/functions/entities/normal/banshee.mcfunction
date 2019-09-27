@@ -1,3 +1,0 @@
-execute as @e[tag=banshee] at @s if entity @p[distance=..10] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:129}}],ArmorDropChances:[0.85F,0.85F,0.5F,-327.67F]}
-execute as @e[tag=banshee] at @s unless entity @p[distance=..10] run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:128}}],ArmorDropChances:[0.85F,0.85F,0.5F,-327.67F]}
-execute as @e[tag=banshee] at @s if entity @p[distance=..10] run playsound minecraft:entity.ghast.hurt hostile @a[distance=..10] ~ ~ ~ 5 1

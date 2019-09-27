@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Master of magic",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Do all rituals"
+        },
+        "icon": {
+            "item": "minecraft:glowstone_dust",
+            "nbt": "{CustomModelData:114}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 1000
+    },
+    "parent": "mb:ritual"
+}

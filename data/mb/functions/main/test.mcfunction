@@ -31,8 +31,11 @@ scoreboard objectives add StoredDamage dummy
 scoreboard objectives add PlayerHealth health
 execute as @a[] run scoreboard players operation @s StoredDamage = @s PlayerHealth
 scoreboard players set double StoredDamage 2
-tellraw @a [{"text":"Witching Hour Loaded!\n\n","color":"dark_green"},{"text":"Pack made by Ancient_Spirit(Black Hat / Playelectro), S4l4kin, SirPumpkinstein, DavveCze, JordenEatsCereals.","color":"blue"}]
+tellraw @a {"text":"Witching Hour Loaded","color":"dark_green"}
 scoreboard objectives add mb_PowerCost dummy
 scoreboard objectives add Age dummy
 scoreboard objectives add Page dummy
 scoreboard objectives add LastPage dummy
+scoreboard objectives add throwerid dummy
+scoreboard objectives add success1 dummy
+scoreboard objectives add success2 dummy

@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Brewing Master",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Brew every potion"
+        },
+        "icon": {
+            "item": "minecraft:splash_potion",
+            "nbt": "{CustomPotionColor:5511812}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 1000
+    },
+    "parent": "mb:custom_potion"
+}

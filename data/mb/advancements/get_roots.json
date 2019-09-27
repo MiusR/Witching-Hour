@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "Start from the roots",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "description": {
+            "text": "Break grass to get roots"
+        },
+        "icon": {
+            "item": "minecraft:glowstone_dust",
+            "nbt": "{CustomModelData:103}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{id:\"root\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mb:root"
+}

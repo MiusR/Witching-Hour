@@ -1,6 +1,0 @@
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{lqpotion:1b}}},distance=..1] if entity @e[type=item,distance=..1,nbt={Item:{tag:{tod:1b}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:redstone",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:apple",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=200..},limit=1] if block ~ ~-1 ~ fire run tag @s add rredstonesoup
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rredstonesoup] at @s run tag @s add timer
-execute as @e[type=armor_stand,tag=cauldron,tag=rredstonesoup,tag=done] at @s run scoreboard players set @e[tag=magicaltar,distance=..20,scores={Power=300..},limit=1] mb_PowerCost 300
-execute as @e[type=armor_stand,tag=cauldron,tag=rredstonesoup] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rredstonesoup] at @s run loot spawn ~ ~ ~ loot mb:items/redstone_soup
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rredstonesoup] at @s run tag @s remove rredstonesoup

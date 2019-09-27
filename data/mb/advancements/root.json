@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Witching hour",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "description": {
+            "text": "Throw an enderpearl on a lectern with a book to get started"
+        },
+        "icon": {
+            "item": "minecraft:lectern"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/block/bookshelf.png"
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{id:\"book_of_forbbiden_arts_stick\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    }
+}

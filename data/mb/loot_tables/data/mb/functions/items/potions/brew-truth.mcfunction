@@ -1,6 +1,0 @@
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,distance=..1,nbt={Item:{tag:{id:"liquid_of_purity"}}}] if entity @e[type=item,distance=..1,nbt={Item:{tag:{id:"wool_of_bat"}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:snowball",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] if block ~ ~-1 ~ fire run tag @s add rbtruth
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rbtruth] at @s run tag @s add timer
-execute as @e[type=armor_stand,tag=cauldron,tag=rbtruth] at @s run tag @e[tag=magicaltar,distance=..20,scores={Power=5..},limit=1] add rpo
-execute as @e[type=armor_stand,tag=cauldron,tag=rbtruth] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbtruth] at @s run loot spawn ~ ~ ~ loot mb:crafting/cauldron/brew_of_truth
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rbtruth] at @s run tag @s remove rbtruth

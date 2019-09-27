@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Brewing++",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Brew a custom potion"
+        },
+        "icon": {
+            "item": "minecraft:brewing_stand"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "mb:witch_cauldron"
+}

@@ -1,3 +1,5 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:stick",Count:2b}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:dead_bush",Count:1b}},distance=..1] if block ~ ~-1 ~ minecraft:crafting_table run function mb:utils/find_thrower
+execute as @e[type=item,nbt={Item:{id:"minecraft:stick",Count:2b}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:dead_bush",Count:1b}},distance=..1] if block ~ ~-1 ~ minecraft:crafting_table at @a[advancements={mb:white_chalk=true}] run advancement grant @p only mb:broom
 execute as @e[type=item,nbt={Item:{id:"minecraft:stick",Count:2b}}] at @s if entity @e[type=item,nbt={Item:{id:"minecraft:dead_bush",Count:1b}},distance=..1] if block ~ ~-1 ~ minecraft:crafting_table run summon armor_stand ~ ~ ~ {Marker:1,Invisible:1,Tags:["craft_broom"]}
 execute as @e[tag=craft_broom] at @s run kill @e[type=item,distance=..1]
 execute as @e[tag=craft_broom] at @s run particle minecraft:cloud ~ ~0.1 ~ 0.1 0.2 0.1 0.1 25

@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Ritual++",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Do a ritual in a brazier"
+        },
+        "icon": {
+            "item": "minecraft:glowstone_dust",
+            "nbt": "{CustomModelData:133}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "mb:brazier"
+}

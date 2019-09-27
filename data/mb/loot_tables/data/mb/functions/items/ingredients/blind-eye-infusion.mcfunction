@@ -1,6 +1,0 @@
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{rds:1b}}},distance=..1] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:fermented_spider_eye",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:obsidian",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:brown_mushroom",Count:1b}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=15..},limit=1] if block ~ ~-1 ~ fire run tag @s add riotbe
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=riotbe] at @s run tag @s add timer
-execute as @e[type=armor_stand,tag=cauldron,tag=riotbe,tag=done] at @s run scoreboard players set @e[tag=magicaltar,distance=..20,scores={Power=900..},limit=1] mb_PowerCost 900
-execute as @e[type=armor_stand,tag=cauldron,tag=riotbe] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=riotbe] at @s run loot spawn ~ ~ ~ loot mb:items/blind_eye_infusion
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=riotbe] at @s run tag @s remove riotbe

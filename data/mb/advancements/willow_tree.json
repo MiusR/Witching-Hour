@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "A magical tree",
+            "color": "dark_purple",
+            "bold": true
+        },
+        "description": {
+            "text": "Throw 13 rotten flesh on an oak sapling surrounded with 8 redstone"
+        },
+        "icon": {
+            "item": "minecraft:oak_sapling"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "mb:root"
+}

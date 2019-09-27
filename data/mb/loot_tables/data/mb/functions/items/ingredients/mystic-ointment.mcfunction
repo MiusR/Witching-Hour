@@ -1,6 +1,0 @@
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer] at @s if entity @e[type=item,nbt={Item:{tag:{rds:1b}}},distance=..1] if entity @e[type=item,distance=..1,nbt={Item:{tag:{dbpotion:1b}}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:diamond",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:oak_sapling",Count:1b}}] if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:potion",Count:1b,tag:{Potion:"minecraft:strength"}}}] if block ~ ~ ~ cauldron[level=3] if entity @e[tag=magicaltar,distance=..20,scores={Power=200..},limit=1] if block ~ ~-1 ~ fire run tag @s add rmysticointment
-execute as @e[type=armor_stand,tag=cauldron,tag=!timer,tag=rmysticointment] at @s run tag @s add timer
-execute as @e[type=armor_stand,tag=cauldron,tag=rmysticointment,tag=done] at @s run scoreboard players set @e[tag=magicaltar,distance=..20,scores={Power=300..},limit=1] mb_PowerCost 300
-execute as @e[type=armor_stand,tag=cauldron,tag=rmysticointment] at @s run kill @e[type=item,distance=..1]
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rmysticointment] at @s run loot spawn ~ ~ ~ loot mb:items/mystic_oinment
-execute as @e[type=armor_stand,tag=cauldron,tag=timer,tag=done,tag=rmysticointment] at @s run tag @s remove rmysticointment

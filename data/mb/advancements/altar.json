@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Magical power",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Give an emerald to a willow tree"
+        },
+        "icon": {
+            "item": "minecraft:redstone_block"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "mb:willow_tree"
+}

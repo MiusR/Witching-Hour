@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "mb:items/brew_of_volatily",
+                    "name": "mb:items/brew_of_volitatility",
                     "functions": [
                         {
                             "function": "minecraft:set_count",

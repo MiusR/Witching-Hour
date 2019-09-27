@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Summon a demon",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Summon a demon"
+        },
+        "icon": {
+            "item": "minecraft:witch_spawn_egg"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "mb:white_chalk"
+}
