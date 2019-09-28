@@ -5,17 +5,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:glass_bottle",
+                    "name": "minecraft:glowstone_dust",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:5,id:\"oli_of_thorns\"}"
+                            "tag": "{CustomModelData:139,id:\"spirit\",soulDimItem:1b,Enchantments:[{lvl:1,id:\"minecraft:power\"}],HideFlags:63}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "Looping Fumes",
+                                "text": "Weakened Spirit",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -33,7 +33,7 @@
                                     "text":" "
                                 },
 								{
-                                    "text":"Do not touch it may sting!",
+                                    "text":"Poor little creature.",
 									"color":"dark_gray",
 									"italic":false
                                 },

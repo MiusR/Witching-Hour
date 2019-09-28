@@ -41,5 +41,7 @@ function mb:rituals/chalkritualc
 function mb:rituals/normalrituals
 function mb:items/active/necrod
 execute as @e[tag=banshee] at @s run function mb:entities/normal/banshee
+execute as @a[tag=movetoSoulDim] at @s run function mb:dim/warpinit
+execute as @a[tag=inSoulDim] at @s in the_nether unless entity @e[tag=souldimfence,distance=..30] run function mb:dim/loadworld
 
 function mb:main/end

@@ -1,0 +1,3 @@
+execute as @a[tag=inSoulDim] at @s in the_nether unless entity @e[tag=souldimfence,distance=..30] run function mb:dim/worldgenconst
+execute as @e[tag=souldimfence] at @s in the_nether unless entity @a[tag=inSoulDim,distance=..30] run kill @s
+execute as @a[tag=inSoulDim] at @s in the_nether unless entity @e[tag=souldimfence,distance=..30] run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,Invisible:1b,PersistenceRequired:1b,Tags:["souldimfence"],DisabledSlots:4144959}

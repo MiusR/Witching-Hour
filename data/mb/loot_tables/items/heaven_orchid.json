@@ -5,17 +5,17 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:glass_bottle",
+                    "name": "minecraft:glowstone_dust",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:5,id:\"oli_of_thorns\"}"
+                            "tag": "{CustomModelData:140,id:\"heaven_orchid\",soulDimItem:1b}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "Looping Fumes",
+                                "text": "Heavenly Orchid",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -33,7 +33,7 @@
                                     "text":" "
                                 },
 								{
-                                    "text":"Do not touch it may sting!",
+                                    "text":"The power of heaven stored within a flower.",
 									"color":"dark_gray",
 									"italic":false
                                 },

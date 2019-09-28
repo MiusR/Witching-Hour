@@ -1,0 +1,12 @@
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute at @e[tag=inSoulDim] run forceload add ~-100 ~-100 ~100 ~100
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~ ~ ~48 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~ ~ ~-48 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~48 ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~-48 ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~-48 ~ ~48 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~-48 ~ ~-48 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~48 ~ ~48 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @a[tag=inSoulDim] at @s in the_nether run summon minecraft:area_effect_cloud ~48 ~ ~-48 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["TerrainMaster","gen"]}
+execute as @e[tag=TerrainMaster] at @s in minecraft:the_nether align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ 128 ~
+execute as @e[tag=TerrainMaster] at @s in the_nether run function mb:dim/nodeplacment

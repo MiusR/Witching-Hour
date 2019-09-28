@@ -39,3 +39,4 @@ scoreboard objectives add LastPage dummy
 scoreboard objectives add throwerid dummy
 scoreboard objectives add success1 dummy
 scoreboard objectives add success2 dummy
+scoreboard objectives add spiritRealmTimer dummy
