@@ -1,0 +1,28 @@
+{
+    "display": {
+        "title": {
+            "text": "Do a ritual",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Do a ritual"
+        },
+        "icon": {
+            "item": "minecraft:glowstone_dust",
+            "nbt": "{CustomModelData:106}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "mb:white_chalk"
+}

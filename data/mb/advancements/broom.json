@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Ctrl+Z",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Craft a broom to undo rune drawing"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:10}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{id:\"broom\"}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50
+    },
+    "parent": "mb:white_chalk"
+}

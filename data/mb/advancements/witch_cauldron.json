@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "The Witch's Cauldron",
+            "color": "dark_purple",
+            "bold": false
+        },
+        "description": {
+            "text": "Throw roots, a gold nugget and a blue orchid into a filled cauldron to get witch's cauldron"
+        },
+        "icon": {
+            "item": "minecraft:glowstone_dust",
+            "nbt": "{CustomModelData:131}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "experience": 10
+    },
+    "parent": "mb:get_roots"
+}

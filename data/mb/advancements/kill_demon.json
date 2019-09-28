@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "Kill A Demon",
+            "color": "dark_purple"
+        },
+        "description": {
+            "text": "Kill a demon"
+        },
+        "icon": {
+            "item": "minecraft:glowstone_dust",
+            "nbt": "{CustomModelData:120}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{DeathLootTable:\"mb:entities/demon\"}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 500
+    },
+    "parent": "mb:demon"
+}
