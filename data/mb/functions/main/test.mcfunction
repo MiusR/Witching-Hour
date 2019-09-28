@@ -36,3 +36,6 @@ scoreboard objectives add mb_PowerCost dummy
 scoreboard objectives add Age dummy
 scoreboard objectives add Page dummy
 scoreboard objectives add LastPage dummy
+scoreboard objectives add throwerid dummy
+scoreboard objectives add success1 dummy
+scoreboard objectives add success2 dummy

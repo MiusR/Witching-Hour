@@ -34,6 +34,7 @@ function mb:items/active/coinf
 function mb:items/active/mosscrown
 function mb:main/thebooktest
 function mb:main/thebook
+function mb:main/advancements
 function mb:blocks/altar
 function mb:blocks/cauldron
 function mb:rituals/chalkritualc
