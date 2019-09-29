@@ -9,6 +9,7 @@ execute as @e[tag=book_ui,tag=!done] at @s if block ^ ^ ^1 air run tp @s ^ ^ ^1
 execute as @e[tag=book_ui,tag=!done] at @s run tp @s ~ ~ ~ ~ ~2
 function mb:main/split/crystalballplacement
 function mb:main/split/brazierplacement
+function mb:main/split/mortarplacment
 execute as @e[tag=book_ui,tag=done,tag=done3] at @s if block ~ ~-1 ~ air run tp @s ~ ~-0.2 ~
 execute as @e[type=!minecraft:player,type=!armor_stand,type=!item,type=!potion] at @s if entity @e[tag=cmgc,tag=rctimer,nbt={ActiveEffects:[{Id:26b,Amplifier:-1b}]},scores={RRTimer=..7200},tag=ritualoftheventhorizon,distance=..10] run tp @s ^-0.1 ^0.1 ^-0.1
 execute as @e[tag=soullink,tag=init] at @s run tp @s ^ ^ ^0.3

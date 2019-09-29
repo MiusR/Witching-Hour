@@ -4,11 +4,6 @@ effect give @e[tag=slowf] minecraft:slow_falling 20 1 true
 #execute as @a[nbt=!{SelectedItem:{tag:{id:"gold_chalk"}}},nbt=!{SelectedItem:{tag:{id:"white_chalk"}}},nbt=!{SelectedItem:{tag:{id:"infernal_chalk"}}},nbt=!{SelectedItem:{tag:{id:"soul_gem"}}},nbt=!{SelectedItem:{tag:{id:"dimensional_mirror"}}},nbt=!{SelectedItem:{tag:{id:"fates_coin"}}},nbt=!{SelectedItem:{tag:{crownm:1b}}}] run scoreboard players set @s Rclick 0
 effect give @e[tag=hj] minecraft:jump_boost 20 5 true
 execute as @e[tag=fnp] at @s run tp @s ~ ~ ~ facing entity @p[distance=..30] eyes
-execute as @e[type=slime,nbt=!{Tags:[]}] store result score @s Life run data get entity @s AbsorptionAmount
-execute as @a[team=!UF,nbt=!{ActiveEffects:[{Id:14b}]}] at @s if entity @e[tag=joinUF,distance=..30] run team join UF @s
-execute as @a[nbt={ActiveEffects:[{Id:14b}]}] at @s run team leave @s
-execute as @a[] at @s unless entity @e[tag=joinUF,distance=..30] run team leave @s
-execute as @e[type=vex,tag=demon] store result score @s Life run data get entity @s Health
 execute as @e[tag=undeadh] run function mb:main/split/undeadhunterdeathtimer
 scoreboard players add @a Random12 1
 scoreboard players set @a[scores={Random12=13..}] Random12 1

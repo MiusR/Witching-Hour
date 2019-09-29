@@ -1,21 +1,21 @@
 {
     "pools": [
         {
-            "rolls": 4,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "item",
-                    "name": "minecraft:glass_bottle",
+                    "name": "minecraft:firework_rocket",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:14,id:\"evil_blood\"}"
+                            "tag": "{CustomModelData:3,id:\"mortar\",Fireworks:{Flight:-2},HideFlags:63}"
                         },
                         {
                             "function": "set_name",
                             "name" : 
                             {
-                                "text": "Evil Blood",
+                                "text": "Mortar & Pestle",
                                 "color": "gold",
                                 "italic": false
                             }
@@ -25,15 +25,15 @@
                             "lore" : 
                             [
                                 {
-                                    "text":"[Ingredient]",
-                                    "color":"green",
+                                    "text":"[Artifact]",
+                                    "color":"gold",
                                     "italic":false
                                 },
                                 {
                                     "text":" "
                                 },
 								{
-                                    "text":"True corruption took sometime to get here.",
+                                    "text":"Prepeare for de voodoo.",
 									"color":"dark_gray",
 									"italic":false
                                 },

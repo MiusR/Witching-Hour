@@ -25,6 +25,16 @@ execute as @e[tag=book_ui] at @s unless entity @a[distance=..10] run loot spawn 
 execute as @e[tag=book_ui] at @s unless entity @a[distance=..10] run setblock ~ ~0.3 ~ air
 execute as @e[tag=book_ui] at @s unless entity @a[distance=..10] run kill @s
 
+execute as @e[tag=book_ui] at @s if entity @e[tag=brazier,distance=..1] run particle minecraft:cloud ~ ~1 ~ 0.3 0.3 0.3 0 20 force
+execute as @e[tag=book_ui] at @s if entity @e[tag=brazier,distance=..1] run loot spawn ~ ~ ~ loot mb:items/book_of_forbbiden_arts_stick
+execute as @e[tag=book_ui] at @s if entity @e[tag=brazier,distance=..1] run setblock ~ ~0.3 ~ air
+execute as @e[tag=book_ui] at @s if entity @e[tag=brazier,distance=..1] run kill @s
+
+execute as @e[tag=book_ui] at @s if entity @e[tag=magicball,distance=..1] run particle minecraft:cloud ~ ~1 ~ 0.3 0.3 0.3 0 20 force
+execute as @e[tag=book_ui] at @s if entity @e[tag=magicball,distance=..1] run loot spawn ~ ~ ~ loot mb:items/book_of_forbbiden_arts_stick
+execute as @e[tag=book_ui] at @s if entity @e[tag=magicball,distance=..1] run setblock ~ ~0.3 ~ air
+execute as @e[tag=book_ui] at @s if entity @e[tag=magicball,distance=..1] run kill @s
+
 execute as @e[tag=book_ui,tag=done,tag=done1,tag=done3] at @s run particle minecraft:enchant ~ ~1.3 ~ 0 0 0 1 1
 execute as @e[tag=book_ui,tag=done,tag=done1,tag=done3] at @s unless block ~ ~-1 ~ air unless block ~ ~0.3 ~ chest run setblock ~ ~0.3 ~ chest[type=left]{CustomName:"{\"text\":\"Babbling Book\",\"color\":\"dark_gray\"}"}
 execute as @e[tag=book_ui,tag=done,tag=done1,tag=done3,tag=!update] at @s unless block ~1 ~ ~ air run setblock ~ ~0.3 ~ chest[type=left]{CustomName:"{\"text\":\"Babbling Book\",\"color\":\"dark_gray\"}"}

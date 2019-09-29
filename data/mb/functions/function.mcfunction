@@ -22,12 +22,9 @@
 
 function mb:main/misc
 function mb:main/impvmobs
-execute as @e[tag=ees] at @s if entity @p[distance=..8] run function mb:main/split/summonee
-execute as @e[type=slime,tag=eehealth] at @s run function mb:entities/bosses/ee
-execute as @e[tag=treanthealth,tag=!summoned] at @s run function mb:main/split/summontreant
-execute as @e[tag=treanthealth,tag=summoned] at @s run function mb:entities/bosses/treant
 execute as @e[tag=magicball] at @s run function mb:blocks/crystallball
 execute as @e[tag=brazier] at @s run function mb:blocks/brazier
+execute as @e[tag=mortar] at @s run function mb:blocks/mortar
 function mb:rituals/infusions
 function mb:items/active/mirror
 function mb:items/active/coinf
