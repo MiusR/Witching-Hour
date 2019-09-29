@@ -13,3 +13,4 @@ execute as @e[tag=book_ui,tag=done,tag=done3] at @s if block ~ ~-1 ~ air run tp 
 execute as @e[type=!minecraft:player,type=!armor_stand,type=!item,type=!potion] at @s if entity @e[tag=cmgc,tag=rctimer,nbt={ActiveEffects:[{Id:26b,Amplifier:-1b}]},scores={RRTimer=..7200},tag=ritualoftheventhorizon,distance=..10] run tp @s ^-0.1 ^0.1 ^-0.1
 execute as @e[tag=soullink,tag=init] at @s run tp @s ^ ^ ^0.3
 execute as @e[tag=roue] run function mb:main/split/upliftlevel
+execute as @a[tag=inSoulDim] at @s run function mb:dim/dimmisc

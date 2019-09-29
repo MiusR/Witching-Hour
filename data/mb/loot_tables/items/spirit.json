@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:glowstone_dust",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:139,id:\"spirit\",soulDimItem:1b,Enchantments:[{lvl:1,id:\"minecraft:power\"}],HideFlags:63}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Weakened Spirit",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Ingredient]",
+                                    "color":"green",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"Poor little creature.",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":" "
+                                },
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

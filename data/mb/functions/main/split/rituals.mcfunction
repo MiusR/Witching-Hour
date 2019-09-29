@@ -68,3 +68,6 @@ execute as @e[tag=cmgc,tag=rctimer,nbt={ActiveEffects:[{Id:17b,Amplifier:-1b}]},
 
 execute as @e[tag=!rtimer,tag=cmgc,nbt={ActiveEffects:[{Id:5b,Amplifier:-1b}]}] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=600..}] if entity @e[type=item,distance=..3,nbt={Item:{tag:{id:"broom"},Count:1b}}] if entity @e[type=item,distance=..3,nbt={Item:{tag:{id:"flying_ointment"},Count:1b}}] run function mb:rituals/ritual-broom-infusion
 execute as @e[tag=cmgc,nbt={ActiveEffects:[{Id:5b,Amplifier:-1b}]},scores={Timer=30..},tag=ritualofthebroom] run function mb:rituals/ritual-broom-infusion
+
+execute as @e[tag=!rtimer,tag=cmgc,nbt={ActiveEffects:[{Id:1b,Amplifier:-1b}]}] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=700..}] if entity @e[type=item,distance=..3,nbt={Item:{id:"minecraft:golden_apple",Count:1b}}] if entity @e[type=item,distance=..3,nbt={Item:{tag:{id:"spectral_dust"},Count:1b}}] run function mb:rituals/ritual-the-gate
+execute as @e[tag=cmgc,nbt={ActiveEffects:[{Id:1b,Amplifier:-1b}]},scores={Timer=30..},tag=ritualofthegate] run function mb:rituals/ritual-the-gate

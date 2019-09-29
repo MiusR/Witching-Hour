@@ -1,0 +1,55 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:glowstone_dust",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:140,id:\"heaven_orchid\",soulDimItem:1b}"
+                        },
+                        {
+                            "function": "set_name",
+                            "name" : 
+                            {
+                                "text": "Heavenly Orchid",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore" : 
+                            [
+                                {
+                                    "text":"[Ingredient]",
+                                    "color":"green",
+                                    "italic":false
+                                },
+                                {
+                                    "text":" "
+                                },
+								{
+                                    "text":"The power of heaven stored within a flower.",
+									"color":"dark_gray",
+									"italic":false
+                                },
+								{
+                                    "text":" "
+                                },
+                                {
+                                    "text":"  ☽ Witching Hour ☽  ",
+                                    "color":"dark_green",
+                                    "italic":false
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

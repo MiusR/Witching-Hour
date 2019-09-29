@@ -1,4 +1,3 @@
-say hi
 execute as @e[tag=brazier,tag=bone,tag=dark_oak,tag=lilotv,tag=ignited] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=50..}] run tag @s add bdeathlyvail
 execute as @e[tag=brazier,tag=bone,tag=dark_oak,tag=lilotv,tag=ignited] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=50..}] run scoreboard players set @s braziertimer 480
 execute as @e[tag=brazier,tag=bone,tag=dark_oak,tag=lilotv,tag=ignited] at @s if entity @e[tag=magicaltar,distance=..20,scores={Power=50..}] run scoreboard players set @e[tag=magicaltar,distance=..20,limit=1] mb_PowerCost 300
@@ -49,4 +48,3 @@ execute as @e[tag=brazier,tag=bssh,scores={braziertimer=0}] at @s run particle m
 execute as @e[tag=brazier,tag=bssh,scores={braziertimer=0}] at @s run playsound minecraft:block.lava.extinguish master @a[distance=..20] ~ ~ ~ 100 
 execute as @e[tag=brazier,tag=bssh,scores={braziertimer=0}] at @s run advancement grant @p only mb:brazier_ritual
 execute as @e[tag=brazier,tag=bssh,scores={braziertimer=0}] at @s run tag @s remove bssh
-say bye
