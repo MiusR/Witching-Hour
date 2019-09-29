@@ -19,6 +19,8 @@ execute as @e[tag=magicaltar,tag=!activated] at @s run setblock ~ ~-2 ~ grass_bl
 scoreboard players set @e[tag=magicaltar,tag=!activated] MaxPower 1000
 execute as @e[tag=magicaltar,tag=stage2,tag=!activated] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:emerald",Count:1b}}] run playsound minecraft:ui.toast.challenge_complete master @a[distance=..20] ~ ~ ~ 1 1
 execute as @e[tag=magicaltar,tag=stage2,tag=!activated] at @s if entity @e[type=item,distance=..1,nbt={Item:{id:"minecraft:emerald",Count:1b}}] run tag @s add activated
+execute as @e[type=item,nbt={Item:{id:"minecraft:emerald",Count:1b}}] at @s if entity @e[tag=activated,distance=..1] run function mb:utils/find_thrower
+execute as @e[type=item,nbt={Item:{id:"minecraft:emerald",Count:1b}}] at @s if entity @e[tag=activated,distance=..1] at @a[advancements={mb:willow_tree=true}] if score @s throwerid = @p[limit=1,sort=nearest] throwerid run advancement grant @p[limit=1,sort=nearest] only mb:altar
 execute as @e[tag=magicaltar,tag=stage2,tag=activated,tag=!completed] at @s run kill @e[type=item,distance=..2]
 execute as @e[tag=magicaltar,tag=stage2,tag=activated,tag=!completed] at @s run tag @s add completed
 execute as @e[tag=magicaltar,tag=stage2,tag=!activated,scores={PTD=5..}] at @s unless entity @p[distance=..10,nbt={SelectedItem:{id:"minecraft:emerald"}}] run tag @s remove stage2

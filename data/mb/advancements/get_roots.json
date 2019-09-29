@@ -23,7 +23,7 @@
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{id:\"root\"}"
+                        "nbt": "{id:\"roots\"}"
                     }
                 ]
             }
