@@ -54,6 +54,11 @@
 			{"predicate": {"custom_model_data":135}, "model": "item/cb/runeo3"},
 			{"predicate": {"custom_model_data":136}, "model": "item/cb/runeo4"},
 			{"predicate": {"custom_model_data":137}, "model": "item/cb/runeo5"},
-			{"predicate": {"custom_model_data":138}, "model": "item/cb/runeo6"}
+			{"predicate": {"custom_model_data":138}, "model": "item/cb/runeo6"},
+			{"predicate": {"custom_model_data":139}, "model": "item/ci/spirit"},
+			{"predicate": {"custom_model_data":140}, "model": "item/ci/horchid"},
+			{"predicate": {"custom_model_data":141}, "model": "item/cb/mortar"},
+			{"predicate": {"custom_model_data":142}, "model": "item/cb/mortar_full"},
+			{"predicate": {"custom_model_data":143}, "model": "item/cb/mortar_animation"}
 	]
 }
