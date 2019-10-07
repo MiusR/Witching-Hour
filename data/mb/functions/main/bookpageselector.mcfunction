@@ -26,8 +26,8 @@ execute as @e[tag=book_ui,scores={Page=201..213}] at @s unless block ~ ~0.3 ~ ch
 execute as @e[tag=book_ui,scores={Page=200..212}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
 execute as @e[tag=book_ui,scores={Page=301..306}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
 execute as @e[tag=book_ui,scores={Page=300..305}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
-execute as @e[tag=book_ui,scores={Page=501..504}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
-execute as @e[tag=book_ui,scores={Page=500..503}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
+execute as @e[tag=book_ui,scores={Page=501..505}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:18b,tag:{page:previous}}]} run scoreboard players remove @s Page 1
+execute as @e[tag=book_ui,scores={Page=500..504}] at @s unless block ~ ~0.3 ~ chest{Items:[{Slot:26b,tag:{page:next}}]} run scoreboard players add @s Page 1
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s unless score @s Page = @s LastPage run function mb:main/bookpage
 execute as @e[tag=book_ui,tag=done2,tag=done1,tag=done3,tag=done2] at @s store result score @s LastPage run scoreboard players get @s Page
 

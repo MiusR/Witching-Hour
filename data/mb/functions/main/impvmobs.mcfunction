@@ -1,4 +1,4 @@
-scoreboard players set counter count 0
+Fscoreboard players set counter count 0
 scoreboard players set scounter count 0
 execute as @e[type=zombie,tag=!found] run scoreboard players add counter count 1
 execute as @e[type=enderman,tag=!found] in minecraft:overworld run scoreboard players add scounter count 1
@@ -49,6 +49,7 @@ execute as @e[tag=frog,tag=!done] at @s run summon armor_stand ~ ~ ~ {NoGravity:
 execute as @e[tag=frog,tag=!done] at @s run tag @s add done
 execute as @e[tag=frog_gfx] at @s run tp @s @e[tag=frog,tag=done,limit=1,distance=..2,sort=nearest]
 execute as @e[tag=frog,scores={Life=0}] at @s run kill @e[distance=..1,sort=nearest,tag=frog_gfx,limit=1]
+execute as @e[tag=frog_gfx] at @s unless entity @e[tag=frog,distance=..1] run kill @s
 execute as @e[tag=s_frog] at @s run tp @s ~ -250 ~
 execute as @e[tag=s_frog] at @s run kill @s
 execute as @e[tag=frog,scores={Life=0}] at @s run loot spawn ~ ~ ~ loot mb:entities/frog

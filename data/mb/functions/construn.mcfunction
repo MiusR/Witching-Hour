@@ -1,3 +1,4 @@
+function mb:items/active/staff
 execute as @e[tag=cmgc] at @s run function mb:main/split/ritualsparticle
 function mb:entities/potions/potions
 execute as @e[tag=demon] at @s run function mb:entities/bosses/demon
@@ -15,3 +16,5 @@ execute as @e[type=!minecraft:player,type=!armor_stand,type=!item,type=!potion] 
 execute as @e[tag=soullink,tag=init] at @s run tp @s ^ ^ ^0.3
 execute as @e[tag=roue] run function mb:main/split/upliftlevel
 execute as @a[tag=inSoulDim] at @s run function mb:dim/dimmisc
+execute as @e[type=item,nbt={Item:{tag:{id:"mysterious_dust"}}}] at @s if block ~ ~-0.1 ~ air run particle minecraft:dust 1 0.7 0.7 1.5 ~ ~0.5 ~ 0.3 0.3 0.3 0 5
+function mb:rituals/infusions

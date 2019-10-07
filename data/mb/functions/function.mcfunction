@@ -25,7 +25,6 @@ function mb:main/impvmobs
 execute as @e[tag=magicball] at @s run function mb:blocks/crystallball
 execute as @e[tag=brazier] at @s run function mb:blocks/brazier
 execute as @e[tag=mortar] at @s run function mb:blocks/mortar
-function mb:rituals/infusions
 function mb:items/active/mirror
 function mb:items/active/coinf
 function mb:items/active/mosscrown

@@ -1,0 +1,14 @@
+summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["spellselect","slotpickmaster"],DisabledSlots:4144959}
+summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["spellselect","slot1d"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:144}}]}
+summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["spellselect","slot2d"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:144}}]}
+summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["spellselect","slot3d"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:144}}]}
+summon minecraft:armor_stand ~ ~ ~ {CustomNameVisible:1b,NoGravity:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["spellselect","slot4d"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:glowstone_dust",Count:1b,tag:{CustomModelData:144}}]}
+summon minecraft:slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,DeathLootTable:"456789",Health:0.5f,Attributes:[{Name:generic.maxHealth,Base:0.5},{Name:generic.attackDamage,Base:0},{Name:generic.armorToughness,Base:0}],Size:0.5,Tags:["spellselect","slot1p","inv"]}
+summon minecraft:slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,DeathLootTable:"456789",Health:0.5f,Attributes:[{Name:generic.maxHealth,Base:0.5},{Name:generic.attackDamage,Base:0},{Name:generic.armorToughness,Base:0}],Size:0.5,Tags:["spellselect","slot2p","inv"]}
+summon minecraft:slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,DeathLootTable:"456789",Health:0.5f,Attributes:[{Name:generic.maxHealth,Base:0.5},{Name:generic.attackDamage,Base:0},{Name:generic.armorToughness,Base:0}],Size:0.5,Tags:["spellselect","slot3p","inv"]}
+summon minecraft:slime ~ ~ ~ {NoGravity:1b,Silent:1b,NoAI:1b,DeathLootTable:"456789",Health:0.5f,Attributes:[{Name:generic.maxHealth,Base:0.5},{Name:generic.attackDamage,Base:0},{Name:generic.armorToughness,Base:0}],Size:0.5,Tags:["spellselect","slot4p","inv"]}
+
+data modify entity @e[limit=1,distance=..1,tag=slot1d] CustomName set from entity @s SelectedItem.tag.name1[]
+data modify entity @e[limit=1,distance=..1,tag=slot2d] CustomName set from entity @s SelectedItem.tag.name2[]
+data modify entity @e[limit=1,distance=..1,tag=slot3d] CustomName set from entity @s SelectedItem.tag.name3[]
+data modify entity @e[limit=1,distance=..1,tag=slot4d] CustomName set from entity @s SelectedItem.tag.name4[]

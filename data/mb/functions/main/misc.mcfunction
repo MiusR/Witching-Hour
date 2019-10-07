@@ -1,6 +1,8 @@
 effect give @e[tag=inv] minecraft:invisibility 20 255 true
 effect give @e[tag=fr] minecraft:fire_resistance 20 255 true
 effect give @e[tag=slowf] minecraft:slow_falling 20 1 true
+execute as @e[type=wandering_trader,tag=!done] run data modify entity @s Offers.Recipes append value {rewardExp:0b,maxUses:1,uses:0,xp:0,priceMultiplier:0f,buy:{id:"minecraft:oak_wood",Count:3b},buyB:{id:"minecraft:gold_ingot",Count:3b},sell:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"Shaman\'s Staff","color":"gold","italic":false}',Lore:['{"text":"[Artifact]","color":"gold","italic":false}','{"text":""}','{"text":"A great tool with little uses.","color":"dark_gray"}','{"text":""}','{"text":"☽ Witching Hour ☽","color":"dark_green"}']},HideFlags:63,Unbreakable:1b,CustomModelData:12,id:staff}}}
+execute as @e[type=wandering_trader,tag=!done] run tag @s add done
 #execute as @a[nbt=!{SelectedItem:{tag:{id:"gold_chalk"}}},nbt=!{SelectedItem:{tag:{id:"white_chalk"}}},nbt=!{SelectedItem:{tag:{id:"infernal_chalk"}}},nbt=!{SelectedItem:{tag:{id:"soul_gem"}}},nbt=!{SelectedItem:{tag:{id:"dimensional_mirror"}}},nbt=!{SelectedItem:{tag:{id:"fates_coin"}}},nbt=!{SelectedItem:{tag:{crownm:1b}}}] run scoreboard players set @s Rclick 0
 effect give @e[tag=hj] minecraft:jump_boost 20 5 true
 execute as @e[tag=fnp] at @s run tp @s ~ ~ ~ facing entity @p[distance=..30] eyes
